@@ -1,0 +1,18 @@
+<nodes>
+    <node id="N" x="700" y="1180" type="priority"/>
+    <node id="S" x="700" y="120" type="priority"/>
+    <node id="WU" x="80" y="1000" type="priority"/>
+    <node id="WM" x="80" y="760" type="priority"/>
+    <node id="WL" x="80" y="520" type="priority"/>
+    <node id="EU" x="1320" y="1000" type="priority"/>
+    <node id="EM" x="1320" y="760" type="priority"/>
+    <node id="EL" x="1320" y="520" type="priority"/>
+    <node id="J0" x="380" y="1000" type="traffic_light"/>
+    <node id="J1" x="700" y="1000" type="traffic_light"/>
+    <node id="J2" x="380" y="760" type="traffic_light"/>
+    <node id="J3" x="700" y="760" type="traffic_light"/>
+    <node id="J4" x="1020" y="760" type="traffic_light"/>
+    <node id="J5" x="380" y="520" type="traffic_light"/>
+    <node id="J6" x="700" y="520" type="traffic_light"/>
+    <node id="J7" x="1020" y="520" type="traffic_light"/>
+</nodes>

@@ -1,0 +1,44 @@
+[project]
+name = "image-interchange-demo"
+seed = 37
+
+[simulation]
+backend = "sumo"
+episode_seconds = 360
+control_interval = 10
+warmup_seconds = 24
+grid_rows = 3
+grid_cols = 3
+arrival_rate = 0.56
+service_rate = 0.75
+transfer_probability = 0.72
+max_queue = 90
+
+[scenario]
+name = "image_interchange_peak"
+demand_multiplier = 1.0
+directional_bias_ns = 0.55
+directional_bias_ew = 0.45
+noise = 0.04
+emergency_vehicle_rate = 0.015
+
+[controller]
+name = "hybrid"
+phase_actions = ["ns_green", "ew_green"]
+genetic_population = 30
+genetic_generations = 24
+qaoa_layers = 4
+qaoa_trials = 420
+prediction_horizon_steps = 10
+coordination_bonus = -28.0
+one_hot_penalty = 64.0
+min_green_seconds = 8
+max_green_seconds = 42
+
+[sumo]
+sumo_binary = ""
+sumocfg_path = "generated_image_demo\\image_interchange.sumocfg"
+use_gui = false
+
+[output]
+directory = "reports\\image_demo"

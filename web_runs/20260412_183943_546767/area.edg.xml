@@ -1,0 +1,6 @@
+<edges>
+    <edge id="E1_P0_P2" from="P0" to="P2" numLanes="1" speed="13.9" shape="50.0,410.0 650.0,410.0"/>
+    <edge id="E1_P2_P0" from="P2" to="P0" numLanes="1" speed="13.9" shape="650.0,410.0 50.0,410.0"/>
+    <edge id="E3_P0_P4" from="P0" to="P4" numLanes="1" speed="13.9" shape="50.0,410.0 50.0,50.0"/>
+    <edge id="E3_P4_P0" from="P4" to="P0" numLanes="1" speed="13.9" shape="50.0,50.0 50.0,410.0"/>
+</edges>

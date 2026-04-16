@@ -1,0 +1,44 @@
+[project]
+name = "sumo-city-grid"
+seed = 11
+
+[simulation]
+backend = "sumo"
+episode_seconds = 1800
+control_interval = 15
+warmup_seconds = 30
+grid_rows = 3
+grid_cols = 3
+arrival_rate = 0.3
+service_rate = 0.7
+transfer_probability = 0.7
+max_queue = 40
+
+[scenario]
+name = "sumo_peak"
+demand_multiplier = 1.0
+directional_bias_ns = 0.55
+directional_bias_ew = 0.45
+noise = 0.05
+emergency_vehicle_rate = 0.02
+
+[controller]
+name = "hybrid"
+phase_actions = ["hold", "ns_green", "ew_green", "pedestrian_all_red"]
+genetic_population = 18
+genetic_generations = 12
+qaoa_layers = 2
+qaoa_trials = 160
+prediction_horizon_steps = 6
+coordination_bonus = -10.0
+one_hot_penalty = 36.0
+min_green_seconds = 15
+max_green_seconds = 90
+
+[sumo]
+sumo_binary = ""
+sumocfg_path = "generated_sumo\\grid.sumocfg"
+use_gui = false
+
+[output]
+directory = "reports"

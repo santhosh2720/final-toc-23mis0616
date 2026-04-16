@@ -1,0 +1,2 @@
+controller,scenario,avg_waiting_time_mean,avg_waiting_time_std,avg_queue_length_mean,throughput_mean,avg_reward_mean,stops_per_vehicle_mean,emergency_delay_mean,runs,wait_ci95
+hybrid,area_run,67.06666666666666,,5.183333333333334,0.0,-25.380208333333332,0.0,0.0,1,0.0

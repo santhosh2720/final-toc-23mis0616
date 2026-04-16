@@ -1,0 +1,7 @@
+<nodes>
+    <node id="J0_0" x="1074.96" y="882.25" type="traffic_light"/>
+    <node id="W0" x="0" y="880.0" type="priority"/>
+    <node id="E0" x="2240.0" y="880.0" type="priority"/>
+    <node id="N0" x="1079.71" y="1760.0" type="priority"/>
+    <node id="S0" x="1079.71" y="0" type="priority"/>
+</nodes>

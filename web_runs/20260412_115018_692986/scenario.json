@@ -1,0 +1,196 @@
+{
+  "run_id": "20260412_115018_692986",
+  "scenario_name": "area_20260412_115018_692986",
+  "sumocfg_path": "C:\\Users\\santhosh\\OneDrive\\Desktop\\trafiic pro\\web_runs\\20260412_115018_692986\\area.sumocfg",
+  "net_path": "C:\\Users\\santhosh\\OneDrive\\Desktop\\trafiic pro\\web_runs\\20260412_115018_692986\\area.net.xml",
+  "route_path": "C:\\Users\\santhosh\\OneDrive\\Desktop\\trafiic pro\\web_runs\\20260412_115018_692986\\area.rou.xml",
+  "source": "map-color-scan",
+  "fallback_reason": null,
+  "user_message": "Created a warm-road scanned SUMO network with 3 major corridors and 4 crossing roads.",
+  "bbox": {
+    "south": 12.916133750386969,
+    "north": 12.916486686651053,
+    "west": 79.13231939077379,
+    "east": 79.13291484117508
+  },
+  "polygon": [
+    {
+      "lat": 12.916133750386969,
+      "lng": 79.13231939077379
+    },
+    {
+      "lat": 12.916486686651053,
+      "lng": 79.13231939077379
+    },
+    {
+      "lat": 12.916486686651053,
+      "lng": 79.13291484117508
+    },
+    {
+      "lat": 12.916133750386969,
+      "lng": 79.13291484117508
+    }
+  ],
+  "preview": {
+    "nodes": [
+      {
+        "id": "P0",
+        "x": 460.26,
+        "y": 357.9,
+        "type": "traffic_light"
+      },
+      {
+        "id": "P1",
+        "x": 0.0,
+        "y": 244.3,
+        "type": "priority"
+      },
+      {
+        "id": "P2",
+        "x": 820.0,
+        "y": 500.0,
+        "type": "priority"
+      },
+      {
+        "id": "P3",
+        "x": 324.05,
+        "y": 0.0,
+        "type": "priority"
+      }
+    ],
+    "edges": [
+      {
+        "id": "E0_P0_P1",
+        "from": "P0",
+        "to": "P1",
+        "lanes": 1,
+        "shape": [
+          {
+            "x": 456.31,
+            "y": 357.34
+          },
+          {
+            "x": 273.14,
+            "y": 294.7
+          },
+          {
+            "x": -0.13,
+            "y": 245.04
+          }
+        ]
+      },
+      {
+        "id": "E0_P1_P0",
+        "from": "P1",
+        "to": "P0",
+        "lanes": 1,
+        "shape": [
+          {
+            "x": 0.13,
+            "y": 243.56
+          },
+          {
+            "x": 273.52,
+            "y": 293.24
+          },
+          {
+            "x": 456.8,
+            "y": 355.92
+          }
+        ]
+      },
+      {
+        "id": "E1_P0_P2",
+        "from": "P0",
+        "to": "P2",
+        "lanes": 1,
+        "shape": [
+          {
+            "x": 464.12,
+            "y": 358.9
+          },
+          {
+            "x": 729.11,
+            "y": 484.62
+          },
+          {
+            "x": 820.12,
+            "y": 499.26
+          }
+        ]
+      },
+      {
+        "id": "E1_P2_P0",
+        "from": "P2",
+        "to": "P0",
+        "lanes": 1,
+        "shape": [
+          {
+            "x": 819.88,
+            "y": 500.74
+          },
+          {
+            "x": 728.67,
+            "y": 486.06
+          },
+          {
+            "x": 463.48,
+            "y": 360.26
+          }
+        ]
+      },
+      {
+        "id": "E2_P0_P3",
+        "from": "P0",
+        "to": "P3",
+        "lanes": 1,
+        "shape": [
+          {
+            "x": 507.05,
+            "y": 668.04
+          },
+          {
+            "x": 435.09,
+            "y": 298.86
+          },
+          {
+            "x": 323.35,
+            "y": 0.26
+          }
+        ]
+      },
+      {
+        "id": "E2_P3_P0",
+        "from": "P3",
+        "to": "P0",
+        "lanes": 1,
+        "shape": [
+          {
+            "x": 324.75,
+            "y": -0.26
+          },
+          {
+            "x": 436.53,
+            "y": 298.46
+          },
+          {
+            "x": 508.52,
+            "y": 667.75
+          }
+        ]
+      }
+    ],
+    "bounds": {
+      "min_x": 0.0,
+      "max_x": 820.0,
+      "min_y": 0.0,
+      "max_y": 500.0
+    }
+  },
+  "layout": {
+    "rows": 3,
+    "cols": 4,
+    "width": 960.0,
+    "height": 640.0
+  }
+}

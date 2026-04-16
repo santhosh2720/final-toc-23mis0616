@@ -1,0 +1,5 @@
+controller,scenario,avg_waiting_time,avg_queue_length,throughput,avg_reward,stops_per_vehicle,emergency_delay,total_steps
+fixed,image_interchange_peak,5798.133333333333,89.8638888888889,161.0,-2016.657480373185,0.0,0.0,360
+actuated,image_interchange_peak,22733.897222222222,235.33333333333334,84.0,-8511.977256714403,0.0,0.0,360
+genetic,image_interchange_peak,22358.92777777778,238.225,73.0,-9365.922038211827,0.0,0.0,360
+hybrid,image_interchange_peak,7800.988888888889,137.26388888888889,117.0,-3278.0106029802996,0.0,0.0,360

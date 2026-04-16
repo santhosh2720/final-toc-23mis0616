@@ -1,0 +1,36 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Run Project Benchmark",
+      "type": "shell",
+      "command": "${workspaceFolder}\\run_project.bat",
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "Run Mock Smoke Test",
+      "type": "shell",
+      "command": "${workspaceFolder}\\run_mock_smoke.bat",
+      "problemMatcher": []
+    },
+    {
+      "label": "Train Hybrid Policy",
+      "type": "shell",
+      "command": "${workspaceFolder}\\run_train.bat",
+      "problemMatcher": []
+    },
+    {
+      "label": "Run SUMO GUI",
+      "type": "shell",
+      "command": "${workspaceFolder}\\run_sumo_gui.bat",
+      "problemMatcher": []
+    },
+    {
+      "label": "Run Web Dashboard",
+      "type": "shell",
+      "command": "${workspaceFolder}\\run_web_dashboard.bat",
+      "problemMatcher": []
+    }
+  ]
+}

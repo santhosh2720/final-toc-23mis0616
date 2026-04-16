@@ -1,0 +1,336 @@
+{
+  "run_id": "20260412_121904_726138",
+  "selected_controller": "hybrid",
+  "mode": "full",
+  "metrics": [
+    {
+      "controller": "fixed",
+      "scenario": "area_run",
+      "avg_waiting_time": 38.53333333333333,
+      "avg_queue_length": 4.066666666666666,
+      "throughput": 3.0,
+      "avg_reward": -25.368055555555557,
+      "stops_per_vehicle": 0.0,
+      "emergency_delay": 0.0,
+      "total_steps": 60
+    },
+    {
+      "controller": "actuated",
+      "scenario": "area_run",
+      "avg_waiting_time": 47.333333333333336,
+      "avg_queue_length": 4.483333333333333,
+      "throughput": 4.0,
+      "avg_reward": -20.194791666666667,
+      "stops_per_vehicle": 0.0,
+      "emergency_delay": 0.0,
+      "total_steps": 60
+    },
+    {
+      "controller": "genetic",
+      "scenario": "area_run",
+      "avg_waiting_time": 64.81666666666666,
+      "avg_queue_length": 4.883333333333334,
+      "throughput": 4.0,
+      "avg_reward": -25.31006944444444,
+      "stops_per_vehicle": 0.0,
+      "emergency_delay": 0.0,
+      "total_steps": 60
+    },
+    {
+      "controller": "hybrid",
+      "scenario": "area_run",
+      "avg_waiting_time": 47.333333333333336,
+      "avg_queue_length": 4.483333333333333,
+      "throughput": 4.0,
+      "avg_reward": -20.194791666666667,
+      "stops_per_vehicle": 0.0,
+      "emergency_delay": 0.0,
+      "total_steps": 60
+    }
+  ],
+  "summary": [
+    {
+      "controller": "actuated",
+      "scenario": "area_run",
+      "avg_waiting_time_mean": 47.333333333333336,
+      "avg_waiting_time_std": null,
+      "avg_queue_length_mean": 4.483333333333333,
+      "throughput_mean": 4.0,
+      "avg_reward_mean": -20.194791666666667,
+      "stops_per_vehicle_mean": 0.0,
+      "emergency_delay_mean": 0.0,
+      "runs": 1,
+      "wait_ci95": 0.0
+    },
+    {
+      "controller": "fixed",
+      "scenario": "area_run",
+      "avg_waiting_time_mean": 38.53333333333333,
+      "avg_waiting_time_std": null,
+      "avg_queue_length_mean": 4.066666666666666,
+      "throughput_mean": 3.0,
+      "avg_reward_mean": -25.368055555555557,
+      "stops_per_vehicle_mean": 0.0,
+      "emergency_delay_mean": 0.0,
+      "runs": 1,
+      "wait_ci95": 0.0
+    },
+    {
+      "controller": "genetic",
+      "scenario": "area_run",
+      "avg_waiting_time_mean": 64.81666666666666,
+      "avg_waiting_time_std": null,
+      "avg_queue_length_mean": 4.883333333333334,
+      "throughput_mean": 4.0,
+      "avg_reward_mean": -25.31006944444444,
+      "stops_per_vehicle_mean": 0.0,
+      "emergency_delay_mean": 0.0,
+      "runs": 1,
+      "wait_ci95": 0.0
+    },
+    {
+      "controller": "hybrid",
+      "scenario": "area_run",
+      "avg_waiting_time_mean": 47.333333333333336,
+      "avg_waiting_time_std": null,
+      "avg_queue_length_mean": 4.483333333333333,
+      "throughput_mean": 4.0,
+      "avg_reward_mean": -20.194791666666667,
+      "stops_per_vehicle_mean": 0.0,
+      "emergency_delay_mean": 0.0,
+      "runs": 1,
+      "wait_ci95": 0.0
+    }
+  ],
+  "trace": {
+    "run_id": "20260412_121904_726138",
+    "controller": "hybrid",
+    "steps": [
+      {
+        "time_seconds": 0,
+        "controller": "hybrid",
+        "actions": {
+          "P0": "ns_green"
+        },
+        "intersections": {
+          "P0": {
+            "current_phase": "ns_green",
+            "phase_age": 0,
+            "total_queue": 5.0,
+            "total_wait": 0.0,
+            "approaches": {
+              "north": {
+                "queue_length": 0.0,
+                "avg_speed": 0.0,
+                "occupancy": 0.0,
+                "waiting_time": 0.0
+              },
+              "south": {
+                "queue_length": 0.0,
+                "avg_speed": 0.0,
+                "occupancy": 0.0,
+                "waiting_time": 0.0
+              },
+              "east": {
+                "queue_length": 0.0,
+                "avg_speed": 0.0,
+                "occupancy": 0.0,
+                "waiting_time": 0.0
+              },
+              "west": {
+                "queue_length": 5.0,
+                "avg_speed": 9.002,
+                "occupancy": 0.0,
+                "waiting_time": 0.0
+              }
+            },
+            "decision": {
+              "forecast_score": 0.232,
+              "ns_pressure": 0.0,
+              "ew_pressure": 5.0,
+              "chosen_action": "ns_green",
+              "optimizer_action": "ew_green",
+              "action_rewards": {
+                "ns_green": -0.258,
+                "ew_green": 2.162
+              },
+              "one_hot_penalty": 36.0,
+              "coordination_bonus": -10.0,
+              "message": "North-south green was selected because north-south pressure (0.00) is dominant and forecast congestion is 0.23."
+            }
+          }
+        }
+      },
+      {
+        "time_seconds": 15,
+        "controller": "hybrid",
+        "actions": {
+          "P0": "ew_green"
+        },
+        "intersections": {
+          "P0": {
+            "current_phase": "ns_green",
+            "phase_age": 15,
+            "total_queue": 15.0,
+            "total_wait": 105.0,
+            "approaches": {
+              "north": {
+                "queue_length": 0.0,
+                "avg_speed": 0.0,
+                "occupancy": 0.0,
+                "waiting_time": 0.0
+              },
+              "south": {
+                "queue_length": 0.0,
+                "avg_speed": 0.0,
+                "occupancy": 0.0,
+                "waiting_time": 0.0
+              },
+              "east": {
+                "queue_length": 0.0,
+                "avg_speed": 0.0,
+                "occupancy": 0.0,
+                "waiting_time": 0.0
+              },
+              "west": {
+                "queue_length": 15.0,
+                "avg_speed": 8.097,
+                "occupancy": 0.001,
+                "waiting_time": 105.0
+              }
+            },
+            "decision": {
+              "forecast_score": 0.3963,
+              "ns_pressure": 0.0,
+              "ew_pressure": 15.0,
+              "chosen_action": "ew_green",
+              "optimizer_action": "ew_green",
+              "action_rewards": {
+                "ns_green": 0.2509,
+                "ew_green": 2.6709
+              },
+              "one_hot_penalty": 36.0,
+              "coordination_bonus": -10.0,
+              "message": "East-west green was selected because east-west pressure (15.00) is dominant and forecast congestion is 0.40."
+            }
+          }
+        }
+      },
+      {
+        "time_seconds": 30,
+        "controller": "hybrid",
+        "actions": {
+          "P0": "ew_green"
+        },
+        "intersections": {
+          "P0": {
+            "current_phase": "ew_green",
+            "phase_age": 0,
+            "total_queue": 15.0,
+            "total_wait": 45.0,
+            "approaches": {
+              "north": {
+                "queue_length": 0.0,
+                "avg_speed": 0.0,
+                "occupancy": 0.0,
+                "waiting_time": 0.0
+              },
+              "south": {
+                "queue_length": 0.0,
+                "avg_speed": 0.0,
+                "occupancy": 0.0,
+                "waiting_time": 0.0
+              },
+              "east": {
+                "queue_length": 0.0,
+                "avg_speed": 0.0,
+                "occupancy": 0.0,
+                "waiting_time": 0.0
+              },
+              "west": {
+                "queue_length": 15.0,
+                "avg_speed": 8.562,
+                "occupancy": 0.001,
+                "waiting_time": 45.0
+              }
+            },
+            "decision": {
+              "forecast_score": 0.3693,
+              "ns_pressure": 0.0,
+              "ew_pressure": 15.0,
+              "chosen_action": "ew_green",
+              "optimizer_action": "ew_green",
+              "action_rewards": {
+                "ns_green": -0.0319,
+                "ew_green": 2.7481
+              },
+              "one_hot_penalty": 36.0,
+              "coordination_bonus": -10.0,
+              "message": "East-west green was selected because east-west pressure (15.00) is dominant and forecast congestion is 0.37."
+            }
+          }
+        }
+      },
+      {
+        "time_seconds": 45,
+        "controller": "hybrid",
+        "actions": {
+          "P0": "ew_green"
+        },
+        "intersections": {
+          "P0": {
+            "current_phase": "ew_green",
+            "phase_age": 15,
+            "total_queue": 40.0,
+            "total_wait": 365.0,
+            "approaches": {
+              "north": {
+                "queue_length": 0.0,
+                "avg_speed": 0.0,
+                "occupancy": 0.0,
+                "waiting_time": 0.0
+              },
+              "south": {
+                "queue_length": 0.0,
+                "avg_speed": 0.0,
+                "occupancy": 0.0,
+                "waiting_time": 0.0
+              },
+              "east": {
+                "queue_length": 0.0,
+                "avg_speed": 0.0,
+                "occupancy": 0.0,
+                "waiting_time": 0.0
+              },
+              "west": {
+                "queue_length": 40.0,
+                "avg_speed": 7.14,
+                "occupancy": 0.001,
+                "waiting_time": 365.0
+              }
+            },
+            "decision": {
+              "forecast_score": 0.5325,
+              "ns_pressure": 0.0,
+              "ew_pressure": 40.0,
+              "chosen_action": "ew_green",
+              "optimizer_action": "ew_green",
+              "action_rewards": {
+                "ns_green": 1.0146,
+                "ew_green": 3.7946
+              },
+              "one_hot_penalty": 36.0,
+              "coordination_bonus": -10.0,
+              "message": "East-west green was selected because east-west pressure (40.00) is dominant and forecast congestion is 0.53."
+            }
+          }
+        }
+      }
+    ]
+  },
+  "artifacts": {
+    "benchmark_runs_csv": "/api/runs/20260412_121904_726138/artifacts/benchmark_runs.csv",
+    "benchmark_summary_csv": "/api/runs/20260412_121904_726138/artifacts/benchmark_summary.csv",
+    "trace_json": "/api/runs/20260412_121904_726138/artifacts/trace.json"
+  }
+}

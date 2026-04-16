@@ -1,0 +1,16 @@
+<edges>
+    <edge id="SE0_W1_J1_0" from="W1" to="J1_0" numLanes="1" speed="13.9" shape="180.0,1598.55 441.5,1605.88 703.1,1579.81 964.6,1531.3"/>
+    <edge id="SE0_J1_0_W1" from="J1_0" to="W1" numLanes="1" speed="13.9" shape="964.6,1531.3 703.1,1579.81 441.5,1605.88 180.0,1598.55"/>
+    <edge id="SE1_J1_0_E1" from="J1_0" to="E1" numLanes="1" speed="13.9" shape="180.0,1598.55 1226.11,1537.95"/>
+    <edge id="SE1_E1_J1_0" from="E1" to="J1_0" numLanes="1" speed="13.9" shape="1226.11,1537.95 180.0,1598.55"/>
+    <edge id="SE2_W2_J2_0" from="W2" to="J2_0" numLanes="1" speed="13.9" shape="1226.11,1077.98 2010.71,1147.52"/>
+    <edge id="SE2_J2_0_W2" from="J2_0" to="W2" numLanes="1" speed="13.9" shape="2010.71,1147.52 1226.11,1077.98"/>
+    <edge id="SE3_J2_0_E2" from="J2_0" to="E2" numLanes="1" speed="13.9" shape="1487.61,1083.08 1749.2,1136.9 2010.71,1147.52"/>
+    <edge id="SE3_E2_J2_0" from="E2" to="J2_0" numLanes="1" speed="13.9" shape="2010.71,1147.52 1749.2,1136.9 1487.61,1083.08"/>
+    <edge id="SE4_N0_J1_0" from="N0" to="J1_0" numLanes="1" speed="13.9" shape="1141.63,2068.0 1173.32,1799.25 1112.55,1530.49"/>
+    <edge id="SE4_J1_0_N0" from="J1_0" to="N0" numLanes="1" speed="13.9" shape="1112.55,1530.49 1173.32,1799.25 1141.63,2068.0"/>
+    <edge id="SE5_J1_0_J2_0" from="J1_0" to="J2_0" numLanes="1" speed="13.9" shape="1112.55,1530.49 1205.57,1261.74"/>
+    <edge id="SE5_J2_0_J1_0" from="J2_0" to="J1_0" numLanes="1" speed="13.9" shape="1205.57,1261.74 1112.55,1530.49"/>
+    <edge id="SE6_J2_0_S0" from="J2_0" to="S0" numLanes="1" speed="13.9" shape="1280.38,992.98 1204.08,724.23 1201.94,455.47 1174.34,186.72"/>
+    <edge id="SE6_S0_J2_0" from="S0" to="J2_0" numLanes="1" speed="13.9" shape="1174.34,186.72 1201.94,455.47 1204.08,724.23 1280.38,992.98"/>
+</edges>

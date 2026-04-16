@@ -1,0 +1,210 @@
+{
+  "run_id": "20260411_230524_716185",
+  "scenario_name": "area_20260411_230524_716185",
+  "sumocfg_path": "C:\\Users\\santhosh\\OneDrive\\Desktop\\trafiic pro\\web_runs\\20260411_230524_716185\\area.sumocfg",
+  "net_path": "C:\\Users\\santhosh\\OneDrive\\Desktop\\trafiic pro\\web_runs\\20260411_230524_716185\\area.net.xml",
+  "route_path": "C:\\Users\\santhosh\\OneDrive\\Desktop\\trafiic pro\\web_runs\\20260411_230524_716185\\area.rou.xml",
+  "source": "map-color-scan",
+  "fallback_reason": null,
+  "user_message": "Created a warm-road scanned SUMO network with 1 major corridors and 1 crossing roads.",
+  "bbox": {
+    "south": 13.07,
+    "north": 13.08,
+    "west": 80.27,
+    "east": 80.28
+  },
+  "polygon": [
+    {
+      "lat": 13.08,
+      "lng": 80.27
+    },
+    {
+      "lat": 13.08,
+      "lng": 80.28
+    },
+    {
+      "lat": 13.07,
+      "lng": 80.28
+    },
+    {
+      "lat": 13.07,
+      "lng": 80.27
+    }
+  ],
+  "preview": {
+    "nodes": [
+      {
+        "id": "E0",
+        "x": 2400.0,
+        "y": 1040.0,
+        "type": "priority"
+      },
+      {
+        "id": "J0_0",
+        "x": 1193.08,
+        "y": 1019.64,
+        "type": "traffic_light"
+      },
+      {
+        "id": "N0",
+        "x": 1200.0,
+        "y": 2080.0,
+        "type": "priority"
+      },
+      {
+        "id": "S0",
+        "x": 1200.0,
+        "y": 0.0,
+        "type": "priority"
+      },
+      {
+        "id": "W0",
+        "x": 0.0,
+        "y": 1040.0,
+        "type": "priority"
+      }
+    ],
+    "edges": [
+      {
+        "id": "E0_to_J0_0",
+        "from": "E0",
+        "to": "J0_0",
+        "lanes": 1,
+        "shape": [
+          {
+            "x": 2399.98,
+            "y": 1040.9
+          },
+          {
+            "x": 1198.91,
+            "y": 1020.64
+          }
+        ]
+      },
+      {
+        "id": "J0_0_to_E0",
+        "from": "J0_0",
+        "to": "E0",
+        "lanes": 1,
+        "shape": [
+          {
+            "x": 1198.94,
+            "y": 1018.84
+          },
+          {
+            "x": 2400.02,
+            "y": 1039.1
+          }
+        ]
+      },
+      {
+        "id": "J0_0_to_N0",
+        "from": "J0_0",
+        "to": "N0",
+        "lanes": 1,
+        "shape": [
+          {
+            "x": 1194.02,
+            "y": 1025.48
+          },
+          {
+            "x": 1200.9,
+            "y": 2079.99
+          }
+        ]
+      },
+      {
+        "id": "J0_0_to_S0",
+        "from": "J0_0",
+        "to": "S0",
+        "lanes": 1,
+        "shape": [
+          {
+            "x": 1192.22,
+            "y": 1013.85
+          },
+          {
+            "x": 1199.1,
+            "y": -0.01
+          }
+        ]
+      },
+      {
+        "id": "J0_0_to_W0",
+        "from": "J0_0",
+        "to": "W0",
+        "lanes": 1,
+        "shape": [
+          {
+            "x": 1187.28,
+            "y": 1020.64
+          },
+          {
+            "x": 0.02,
+            "y": 1040.9
+          }
+        ]
+      },
+      {
+        "id": "N0_to_J0_0",
+        "from": "N0",
+        "to": "J0_0",
+        "lanes": 1,
+        "shape": [
+          {
+            "x": 1199.1,
+            "y": 2080.01
+          },
+          {
+            "x": 1192.22,
+            "y": 1025.49
+          }
+        ]
+      },
+      {
+        "id": "S0_to_J0_0",
+        "from": "S0",
+        "to": "J0_0",
+        "lanes": 1,
+        "shape": [
+          {
+            "x": 1200.9,
+            "y": 0.01
+          },
+          {
+            "x": 1194.02,
+            "y": 1013.86
+          }
+        ]
+      },
+      {
+        "id": "W0_to_J0_0",
+        "from": "W0",
+        "to": "J0_0",
+        "lanes": 1,
+        "shape": [
+          {
+            "x": -0.02,
+            "y": 1039.1
+          },
+          {
+            "x": 1187.25,
+            "y": 1018.84
+          }
+        ]
+      }
+    ],
+    "bounds": {
+      "min_x": 0.0,
+      "max_x": 2400.0,
+      "min_y": 0.0,
+      "max_y": 2080.0
+    }
+  },
+  "layout": {
+    "rows": 1,
+    "cols": 1,
+    "width": 2400.0,
+    "height": 2080.0
+  }
+}

@@ -1,0 +1,18 @@
+<edges>
+    <edge id="E0_P4_P0" from="P4" to="P0" numLanes="1" speed="13.9" shape="90.0,460.38 187.27,463.04"/>
+    <edge id="E0_P0_P4" from="P0" to="P4" numLanes="1" speed="13.9" shape="187.27,463.04 90.0,460.38"/>
+    <edge id="E1_P0_P1" from="P0" to="P1" numLanes="1" speed="13.9" shape="187.27,463.04 317.13,535.44 392.86,569.12 468.58,600.65 544.31,626.95 583.83,630.0"/>
+    <edge id="E1_P1_P0" from="P1" to="P0" numLanes="1" speed="13.9" shape="583.83,630.0 544.31,626.95 468.58,600.65 392.86,569.12 317.13,535.44 187.27,463.04"/>
+    <edge id="E2_P1_P2" from="P1" to="P2" numLanes="1" speed="13.9" shape="583.83,630.0 712.67,622.22"/>
+    <edge id="E2_P2_P1" from="P2" to="P1" numLanes="1" speed="13.9" shape="712.67,622.22 583.83,630.0"/>
+    <edge id="E3_P2_P3" from="P2" to="P3" numLanes="1" speed="13.9" shape="712.67,622.22 847.17,626.16 890.0,605.37"/>
+    <edge id="E3_P3_P2" from="P3" to="P2" numLanes="1" speed="13.9" shape="890.0,605.37 847.17,626.16 712.67,622.22"/>
+    <edge id="E4_P0_P5" from="P0" to="P5" numLanes="1" speed="13.9" shape="191.99,589.12 173.03,401.96 142.27,214.8 131.64,90.0"/>
+    <edge id="E4_P5_P0" from="P5" to="P0" numLanes="1" speed="13.9" shape="131.64,90.0 142.27,214.8 173.03,401.96 191.99,589.12"/>
+    <edge id="E5_P1_P6" from="P1" to="P6" numLanes="1" speed="13.9" shape="583.83,651.47 613.96,464.32 630.1,277.16 584.98,90.0"/>
+    <edge id="E5_P6_P1" from="P6" to="P1" numLanes="1" speed="13.9" shape="584.98,90.0 630.1,277.16 613.96,464.32 583.83,651.47"/>
+    <edge id="E6_P2_P7" from="P2" to="P7" numLanes="1" speed="13.9" shape="718.54,651.47 705.45,464.32 697.97,277.16"/>
+    <edge id="E6_P7_P2" from="P7" to="P2" numLanes="1" speed="13.9" shape="697.97,277.16 705.45,464.32 718.54,651.47"/>
+    <edge id="E7_P3_P8" from="P3" to="P8" numLanes="1" speed="13.9" shape="886.9,651.47 889.96,464.32 879.21,277.16"/>
+    <edge id="E7_P8_P3" from="P8" to="P3" numLanes="1" speed="13.9" shape="879.21,277.16 889.96,464.32 886.9,651.47"/>
+</edges>

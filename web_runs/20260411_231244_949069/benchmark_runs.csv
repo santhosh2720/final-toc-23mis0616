@@ -1,0 +1,2 @@
+controller,scenario,avg_waiting_time,avg_queue_length,throughput,avg_reward,stops_per_vehicle,emergency_delay,total_steps
+hybrid,area_run,3.6333333333333333,1.3333333333333333,0.0,-1.1131944444444444,0.0,0.0,60

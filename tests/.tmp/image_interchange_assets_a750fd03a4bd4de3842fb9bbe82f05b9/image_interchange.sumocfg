@@ -1,0 +1,10 @@
+<configuration>
+    <input>
+        <net-file value="image_interchange.net.xml"/>
+        <route-files value="image_interchange.rou.xml"/>
+    </input>
+    <time>
+        <begin value="0"/>
+        <end value="360"/>
+    </time>
+</configuration>

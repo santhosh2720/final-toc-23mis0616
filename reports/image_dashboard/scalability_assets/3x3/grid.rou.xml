@@ -1,0 +1,145 @@
+<routes>
+    <vType id="passenger" accel="2.6" decel="4.5" sigma="0.5" length="5" maxSpeed="13.9"/>
+    <vType id="emergency" accel="3.0" decel="5.0" sigma="0.2" length="5" maxSpeed="16.0" color="1,0,0"/>
+    <route id="r0" edges="J0_0_to_J0_1 J0_1_to_J0_2"/>
+    <route id="r1" edges="J0_2_to_J0_1 J0_1_to_J0_0"/>
+    <route id="r2" edges="J1_0_to_J1_1 J1_1_to_J1_2"/>
+    <route id="r3" edges="J1_2_to_J1_1 J1_1_to_J1_0"/>
+    <route id="r4" edges="J2_0_to_J2_1 J2_1_to_J2_2"/>
+    <route id="r5" edges="J2_2_to_J2_1 J2_1_to_J2_0"/>
+    <route id="r6" edges="J0_0_to_J1_0 J1_0_to_J2_0"/>
+    <route id="r7" edges="J2_0_to_J1_0 J1_0_to_J0_0"/>
+    <route id="r8" edges="J0_1_to_J1_1 J1_1_to_J2_1"/>
+    <route id="r9" edges="J2_1_to_J1_1 J1_1_to_J0_1"/>
+    <route id="r10" edges="J0_2_to_J1_2 J1_2_to_J2_2"/>
+    <route id="r11" edges="J2_2_to_J1_2 J1_2_to_J0_2"/>
+    <vehicle id="veh0" type="passenger" route="r7" depart="0.0"/>
+    <vehicle id="veh1" type="passenger" route="r7" depart="1.16"/>
+    <vehicle id="veh2" type="passenger" route="r9" depart="2.33"/>
+    <vehicle id="veh3" type="passenger" route="r8" depart="3.49"/>
+    <vehicle id="veh4" type="passenger" route="r9" depart="4.65"/>
+    <vehicle id="veh5" type="passenger" route="r1" depart="5.81"/>
+    <vehicle id="veh6" type="passenger" route="r2" depart="6.98"/>
+    <vehicle id="veh7" type="passenger" route="r11" depart="8.14"/>
+    <vehicle id="veh8" type="passenger" route="r9" depart="9.3"/>
+    <vehicle id="veh9" type="passenger" route="r7" depart="10.47"/>
+    <vehicle id="veh10" type="passenger" route="r9" depart="11.63"/>
+    <vehicle id="veh11" type="emergency" route="r9" depart="12.79"/>
+    <vehicle id="veh12" type="passenger" route="r8" depart="13.95"/>
+    <vehicle id="veh13" type="passenger" route="r0" depart="15.12"/>
+    <vehicle id="veh14" type="passenger" route="r3" depart="16.28"/>
+    <vehicle id="veh15" type="passenger" route="r7" depart="17.44"/>
+    <vehicle id="veh16" type="passenger" route="r9" depart="18.6"/>
+    <vehicle id="veh17" type="passenger" route="r8" depart="19.77"/>
+    <vehicle id="veh18" type="passenger" route="r4" depart="20.93"/>
+    <vehicle id="veh19" type="passenger" route="r10" depart="22.09"/>
+    <vehicle id="veh20" type="passenger" route="r10" depart="23.26"/>
+    <vehicle id="veh21" type="passenger" route="r8" depart="24.42"/>
+    <vehicle id="veh22" type="passenger" route="r1" depart="25.58"/>
+    <vehicle id="veh23" type="passenger" route="r5" depart="26.74"/>
+    <vehicle id="veh24" type="passenger" route="r8" depart="27.91"/>
+    <vehicle id="veh25" type="passenger" route="r1" depart="29.07"/>
+    <vehicle id="veh26" type="passenger" route="r1" depart="30.23"/>
+    <vehicle id="veh27" type="passenger" route="r4" depart="31.4"/>
+    <vehicle id="veh28" type="passenger" route="r0" depart="32.56"/>
+    <vehicle id="veh29" type="passenger" route="r0" depart="33.72"/>
+    <vehicle id="veh30" type="passenger" route="r0" depart="34.88"/>
+    <vehicle id="veh31" type="passenger" route="r11" depart="36.05"/>
+    <vehicle id="veh32" type="passenger" route="r1" depart="37.21"/>
+    <vehicle id="veh33" type="passenger" route="r3" depart="38.37"/>
+    <vehicle id="veh34" type="passenger" route="r4" depart="39.53"/>
+    <vehicle id="veh35" type="passenger" route="r4" depart="40.7"/>
+    <vehicle id="veh36" type="passenger" route="r6" depart="41.86"/>
+    <vehicle id="veh37" type="passenger" route="r1" depart="43.02"/>
+    <vehicle id="veh38" type="passenger" route="r11" depart="44.19"/>
+    <vehicle id="veh39" type="passenger" route="r0" depart="45.35"/>
+    <vehicle id="veh40" type="passenger" route="r7" depart="46.51"/>
+    <vehicle id="veh41" type="passenger" route="r8" depart="47.67"/>
+    <vehicle id="veh42" type="passenger" route="r8" depart="48.84"/>
+    <vehicle id="veh43" type="passenger" route="r11" depart="50.0"/>
+    <vehicle id="veh44" type="passenger" route="r6" depart="51.16"/>
+    <vehicle id="veh45" type="passenger" route="r1" depart="52.33"/>
+    <vehicle id="veh46" type="emergency" route="r3" depart="53.49"/>
+    <vehicle id="veh47" type="passenger" route="r9" depart="54.65"/>
+    <vehicle id="veh48" type="passenger" route="r0" depart="55.81"/>
+    <vehicle id="veh49" type="passenger" route="r6" depart="56.98"/>
+    <vehicle id="veh50" type="passenger" route="r9" depart="58.14"/>
+    <vehicle id="veh51" type="passenger" route="r1" depart="59.3"/>
+    <vehicle id="veh52" type="passenger" route="r2" depart="60.47"/>
+    <vehicle id="veh53" type="emergency" route="r4" depart="61.63"/>
+    <vehicle id="veh54" type="passenger" route="r9" depart="62.79"/>
+    <vehicle id="veh55" type="passenger" route="r4" depart="63.95"/>
+    <vehicle id="veh56" type="passenger" route="r1" depart="65.12"/>
+    <vehicle id="veh57" type="passenger" route="r9" depart="66.28"/>
+    <vehicle id="veh58" type="passenger" route="r0" depart="67.44"/>
+    <vehicle id="veh59" type="passenger" route="r5" depart="68.6"/>
+    <vehicle id="veh60" type="passenger" route="r2" depart="69.77"/>
+    <vehicle id="veh61" type="passenger" route="r7" depart="70.93"/>
+    <vehicle id="veh62" type="passenger" route="r2" depart="72.09"/>
+    <vehicle id="veh63" type="passenger" route="r2" depart="73.26"/>
+    <vehicle id="veh64" type="passenger" route="r4" depart="74.42"/>
+    <vehicle id="veh65" type="passenger" route="r9" depart="75.58"/>
+    <vehicle id="veh66" type="passenger" route="r3" depart="76.74"/>
+    <vehicle id="veh67" type="passenger" route="r10" depart="77.91"/>
+    <vehicle id="veh68" type="passenger" route="r3" depart="79.07"/>
+    <vehicle id="veh69" type="passenger" route="r6" depart="80.23"/>
+    <vehicle id="veh70" type="passenger" route="r9" depart="81.4"/>
+    <vehicle id="veh71" type="passenger" route="r0" depart="82.56"/>
+    <vehicle id="veh72" type="passenger" route="r0" depart="83.72"/>
+    <vehicle id="veh73" type="passenger" route="r4" depart="84.88"/>
+    <vehicle id="veh74" type="passenger" route="r11" depart="86.05"/>
+    <vehicle id="veh75" type="passenger" route="r6" depart="87.21"/>
+    <vehicle id="veh76" type="passenger" route="r9" depart="88.37"/>
+    <vehicle id="veh77" type="passenger" route="r8" depart="89.53"/>
+    <vehicle id="veh78" type="passenger" route="r11" depart="90.7"/>
+    <vehicle id="veh79" type="passenger" route="r2" depart="91.86"/>
+    <vehicle id="veh80" type="passenger" route="r8" depart="93.02"/>
+    <vehicle id="veh81" type="passenger" route="r9" depart="94.19"/>
+    <vehicle id="veh82" type="passenger" route="r4" depart="95.35"/>
+    <vehicle id="veh83" type="passenger" route="r3" depart="96.51"/>
+    <vehicle id="veh84" type="passenger" route="r1" depart="97.67"/>
+    <vehicle id="veh85" type="passenger" route="r7" depart="98.84"/>
+    <vehicle id="veh86" type="passenger" route="r0" depart="100.0"/>
+    <vehicle id="veh87" type="passenger" route="r5" depart="101.16"/>
+    <vehicle id="veh88" type="passenger" route="r2" depart="102.33"/>
+    <vehicle id="veh89" type="passenger" route="r2" depart="103.49"/>
+    <vehicle id="veh90" type="passenger" route="r5" depart="104.65"/>
+    <vehicle id="veh91" type="passenger" route="r11" depart="105.81"/>
+    <vehicle id="veh92" type="passenger" route="r2" depart="106.98"/>
+    <vehicle id="veh93" type="passenger" route="r0" depart="108.14"/>
+    <vehicle id="veh94" type="passenger" route="r5" depart="109.3"/>
+    <vehicle id="veh95" type="passenger" route="r0" depart="110.47"/>
+    <vehicle id="veh96" type="passenger" route="r10" depart="111.63"/>
+    <vehicle id="veh97" type="passenger" route="r1" depart="112.79"/>
+    <vehicle id="veh98" type="passenger" route="r5" depart="113.95"/>
+    <vehicle id="veh99" type="passenger" route="r1" depart="115.12"/>
+    <vehicle id="veh100" type="passenger" route="r8" depart="116.28"/>
+    <vehicle id="veh101" type="passenger" route="r0" depart="117.44"/>
+    <vehicle id="veh102" type="passenger" route="r11" depart="118.6"/>
+    <vehicle id="veh103" type="passenger" route="r2" depart="119.77"/>
+    <vehicle id="veh104" type="passenger" route="r5" depart="120.93"/>
+    <vehicle id="veh105" type="passenger" route="r10" depart="122.09"/>
+    <vehicle id="veh106" type="passenger" route="r1" depart="123.26"/>
+    <vehicle id="veh107" type="passenger" route="r6" depart="124.42"/>
+    <vehicle id="veh108" type="passenger" route="r0" depart="125.58"/>
+    <vehicle id="veh109" type="emergency" route="r9" depart="126.74"/>
+    <vehicle id="veh110" type="passenger" route="r10" depart="127.91"/>
+    <vehicle id="veh111" type="emergency" route="r9" depart="129.07"/>
+    <vehicle id="veh112" type="passenger" route="r1" depart="130.23"/>
+    <vehicle id="veh113" type="passenger" route="r10" depart="131.4"/>
+    <vehicle id="veh114" type="passenger" route="r4" depart="132.56"/>
+    <vehicle id="veh115" type="passenger" route="r11" depart="133.72"/>
+    <vehicle id="veh116" type="passenger" route="r11" depart="134.88"/>
+    <vehicle id="veh117" type="passenger" route="r7" depart="136.05"/>
+    <vehicle id="veh118" type="passenger" route="r8" depart="137.21"/>
+    <vehicle id="veh119" type="passenger" route="r8" depart="138.37"/>
+    <vehicle id="veh120" type="passenger" route="r9" depart="139.53"/>
+    <vehicle id="veh121" type="passenger" route="r0" depart="140.7"/>
+    <vehicle id="veh122" type="passenger" route="r11" depart="141.86"/>
+    <vehicle id="veh123" type="passenger" route="r9" depart="143.02"/>
+    <vehicle id="veh124" type="passenger" route="r7" depart="144.19"/>
+    <vehicle id="veh125" type="passenger" route="r0" depart="145.35"/>
+    <vehicle id="veh126" type="passenger" route="r2" depart="146.51"/>
+    <vehicle id="veh127" type="passenger" route="r3" depart="147.67"/>
+    <vehicle id="veh128" type="passenger" route="r5" depart="148.84"/>
+</routes>

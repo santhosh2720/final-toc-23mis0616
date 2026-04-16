@@ -1,0 +1,5 @@
+controller,scenario,avg_waiting_time_mean,avg_waiting_time_std,avg_queue_length_mean,throughput_mean,avg_reward_mean,stops_per_vehicle_mean,emergency_delay_mean,runs,wait_ci95
+actuated,area_run,6827.843333333333,,76.39333333333333,41.0,-2122.9719101027254,0.0,0.0,1,0.0
+fixed,area_run,77.81,,8.39,103.0,-64.03628904186914,0.0,0.0,1,0.0
+genetic,area_run,7551.1,,80.90666666666667,36.0,-2510.187599851047,0.0,0.0,1,0.0
+hybrid,area_run,6827.843333333333,,76.39333333333333,41.0,-2122.9719101027254,0.0,0.0,1,0.0

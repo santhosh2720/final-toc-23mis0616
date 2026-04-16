@@ -1,0 +1,6 @@
+<additional>
+    <vType id="car" accel="2.6" decel="4.5" sigma="0.5" length="5" maxSpeed="13.9"/>
+    <vType id="bus" accel="1.2" decel="4.0" sigma="0.5" length="12" maxSpeed="11.1"/>
+    <vType id="truck" accel="0.8" decel="3.5" sigma="0.5" length="10" maxSpeed="10.0"/>
+    <vType id="emergency" accel="3.0" decel="5.0" sigma="0.2" length="5" maxSpeed="16.0" color="1,0,0"/>
+</additional>

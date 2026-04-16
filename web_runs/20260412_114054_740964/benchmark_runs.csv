@@ -1,0 +1,5 @@
+controller,scenario,avg_waiting_time,avg_queue_length,throughput,avg_reward,stops_per_vehicle,emergency_delay,total_steps
+fixed,area_run,770.2533333333333,20.476666666666667,39.0,-183.34124235725864,0.0,0.0,300
+actuated,area_run,3540.786666666667,49.51,13.0,-900.7344650111742,0.0,0.0,300
+genetic,area_run,4942.0633333333335,60.49666666666667,2.0,-1459.27842839754,0.0,0.0,300
+hybrid,area_run,3540.786666666667,49.51,13.0,-900.7344650111742,0.0,0.0,300

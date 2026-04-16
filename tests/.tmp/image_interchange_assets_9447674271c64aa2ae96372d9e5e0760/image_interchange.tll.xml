@@ -1,0 +1,4 @@
+<additional>
+    <vType id="passenger" accel="2.8" decel="4.6" sigma="0.4" length="5" maxSpeed="16.7"/>
+    <vType id="emergency" accel="3.2" decel="5.0" sigma="0.2" length="5" maxSpeed="18.0" color="1,0,0"/>
+</additional>

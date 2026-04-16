@@ -1,0 +1,20 @@
+<edges>
+    <edge id="E0_P4_P0" from="P4" to="P0" numLanes="1" speed="13.9" shape="70.0,319.93 252.22,340.9 378.66,386.49"/>
+    <edge id="E0_P0_P4" from="P0" to="P4" numLanes="1" speed="13.9" shape="378.66,386.49 252.22,340.9 70.0,319.93"/>
+    <edge id="E1_P0_P1" from="P0" to="P1" numLanes="1" speed="13.9" shape="378.66,386.49 625.41,495.67"/>
+    <edge id="E1_P1_P0" from="P1" to="P0" numLanes="1" speed="13.9" shape="625.41,495.67 378.66,386.49"/>
+    <edge id="E2_P1_P5" from="P1" to="P5" numLanes="1" speed="13.9" shape="625.41,495.67 798.86,364.33 890.0,368.51"/>
+    <edge id="E2_P5_P1" from="P5" to="P1" numLanes="1" speed="13.9" shape="890.0,368.51 798.86,364.33 625.41,495.67"/>
+    <edge id="E3_P6_P2" from="P6" to="P2" numLanes="1" speed="13.9" shape="70.0,70.0 279.57,78.51"/>
+    <edge id="E3_P2_P6" from="P2" to="P6" numLanes="1" speed="13.9" shape="279.57,78.51 70.0,70.0"/>
+    <edge id="E4_P2_P3" from="P2" to="P3" numLanes="1" speed="13.9" shape="279.57,78.51 434.43,88.88 640.62,101.64"/>
+    <edge id="E4_P3_P2" from="P3" to="P2" numLanes="1" speed="13.9" shape="640.62,101.64 434.43,88.88 279.57,78.51"/>
+    <edge id="E5_P3_P7" from="P3" to="P7" numLanes="1" speed="13.9" shape="640.62,101.64 798.86,137.01 890.0,112.61"/>
+    <edge id="E5_P7_P3" from="P7" to="P3" numLanes="1" speed="13.9" shape="890.0,112.61 798.86,137.01 640.62,101.64"/>
+    <edge id="E6_P8_P0" from="P8" to="P0" numLanes="1" speed="13.9" shape="417.84,570.0 378.66,386.49"/>
+    <edge id="E6_P0_P8" from="P0" to="P8" numLanes="1" speed="13.9" shape="378.66,386.49 417.84,570.0"/>
+    <edge id="E7_P0_P2" from="P0" to="P2" numLanes="1" speed="13.9" shape="378.66,386.49 299.98,259.03 279.57,78.51"/>
+    <edge id="E7_P2_P0" from="P2" to="P0" numLanes="1" speed="13.9" shape="279.57,78.51 299.98,259.03 378.66,386.49"/>
+    <edge id="E9_P1_P3" from="P1" to="P3" numLanes="1" speed="13.9" shape="625.41,495.67 650.32,259.03 640.62,101.64"/>
+    <edge id="E9_P3_P1" from="P3" to="P1" numLanes="1" speed="13.9" shape="640.62,101.64 650.32,259.03 625.41,495.67"/>
+</edges>

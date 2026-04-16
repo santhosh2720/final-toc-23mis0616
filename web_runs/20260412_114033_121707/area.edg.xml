@@ -1,0 +1,10 @@
+<edges>
+    <edge id="E0_P1_P0" from="P1" to="P0" numLanes="1" speed="13.9" shape="180.0,568.56 981.5,624.77 1267.81,728.54"/>
+    <edge id="E0_P0_P1" from="P0" to="P1" numLanes="1" speed="13.9" shape="1267.81,728.54 981.5,624.77 180.0,568.56"/>
+    <edge id="E1_P0_P2" from="P0" to="P2" numLanes="1" speed="13.9" shape="1267.81,728.54 1983.2,890.96"/>
+    <edge id="E1_P2_P0" from="P2" to="P0" numLanes="1" speed="13.9" shape="1983.2,890.96 1267.81,728.54"/>
+    <edge id="E2_P3_P0" from="P3" to="P0" numLanes="1" speed="13.9" shape="998.8,1106.93 1267.81,728.54"/>
+    <edge id="E2_P0_P3" from="P0" to="P3" numLanes="1" speed="13.9" shape="1267.81,728.54 998.8,1106.93"/>
+    <edge id="E3_P0_P4" from="P0" to="P4" numLanes="1" speed="13.9" shape="1267.81,728.54 928.51,315.2 586.27,202.13"/>
+    <edge id="E3_P4_P0" from="P4" to="P0" numLanes="1" speed="13.9" shape="586.27,202.13 928.51,315.2 1267.81,728.54"/>
+</edges>

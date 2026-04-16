@@ -1,0 +1,196 @@
+{
+  "run_id": "20260412_114054_740964",
+  "scenario_name": "area_20260412_114054_740964",
+  "sumocfg_path": "C:\\Users\\santhosh\\OneDrive\\Desktop\\trafiic pro\\web_runs\\20260412_114054_740964\\area.sumocfg",
+  "net_path": "C:\\Users\\santhosh\\OneDrive\\Desktop\\trafiic pro\\web_runs\\20260412_114054_740964\\area.net.xml",
+  "route_path": "C:\\Users\\santhosh\\OneDrive\\Desktop\\trafiic pro\\web_runs\\20260412_114054_740964\\area.rou.xml",
+  "source": "map-color-scan",
+  "fallback_reason": null,
+  "user_message": "Created a warm-road scanned SUMO network with 3 major corridors and 4 crossing roads.",
+  "bbox": {
+    "south": 12.92341099921196,
+    "north": 12.924435790311444,
+    "west": 79.12516593933107,
+    "east": 79.12615299224855
+  },
+  "polygon": [
+    {
+      "lat": 12.92341099921196,
+      "lng": 79.12516593933107
+    },
+    {
+      "lat": 12.924435790311444,
+      "lng": 79.12516593933107
+    },
+    {
+      "lat": 12.924435790311444,
+      "lng": 79.12615299224855
+    },
+    {
+      "lat": 12.92341099921196,
+      "lng": 79.12615299224855
+    }
+  ],
+  "preview": {
+    "nodes": [
+      {
+        "id": "P0",
+        "x": 512.0,
+        "y": 559.06,
+        "type": "traffic_light"
+      },
+      {
+        "id": "P1",
+        "x": 1800.0,
+        "y": 630.58,
+        "type": "priority"
+      },
+      {
+        "id": "P2",
+        "x": 602.8,
+        "y": 905.65,
+        "type": "priority"
+      },
+      {
+        "id": "P3",
+        "x": 715.6,
+        "y": 0.0,
+        "type": "priority"
+      }
+    ],
+    "edges": [
+      {
+        "id": "E0_P0_P1",
+        "from": "P0",
+        "to": "P1",
+        "lanes": 1,
+        "shape": [
+          {
+            "x": 7.92,
+            "y": 589.22
+          },
+          {
+            "x": 800.01,
+            "y": 533.75
+          },
+          {
+            "x": 1600.09,
+            "y": 608.25
+          },
+          {
+            "x": 1800.1,
+            "y": 629.69
+          }
+        ]
+      },
+      {
+        "id": "E0_P1_P0",
+        "from": "P1",
+        "to": "P0",
+        "lanes": 1,
+        "shape": [
+          {
+            "x": 1799.9,
+            "y": 631.47
+          },
+          {
+            "x": 1599.91,
+            "y": 610.05
+          },
+          {
+            "x": 799.99,
+            "y": 535.55
+          },
+          {
+            "x": 8.04,
+            "y": 591.02
+          }
+        ]
+      },
+      {
+        "id": "E1_P0_P2",
+        "from": "P0",
+        "to": "P2",
+        "lanes": 1,
+        "shape": [
+          {
+            "x": 515.07,
+            "y": 567.23
+          },
+          {
+            "x": 603.67,
+            "y": 905.42
+          }
+        ]
+      },
+      {
+        "id": "E1_P2_P0",
+        "from": "P2",
+        "to": "P0",
+        "lanes": 1,
+        "shape": [
+          {
+            "x": 601.93,
+            "y": 905.88
+          },
+          {
+            "x": 513.33,
+            "y": 567.68
+          }
+        ]
+      },
+      {
+        "id": "E2_P0_P3",
+        "from": "P0",
+        "to": "P3",
+        "lanes": 1,
+        "shape": [
+          {
+            "x": 515.09,
+            "y": 550.9
+          },
+          {
+            "x": 734.66,
+            "y": 112.99
+          },
+          {
+            "x": 714.71,
+            "y": 0.16
+          }
+        ]
+      },
+      {
+        "id": "E2_P3_P0",
+        "from": "P3",
+        "to": "P0",
+        "lanes": 1,
+        "shape": [
+          {
+            "x": 716.49,
+            "y": -0.16
+          },
+          {
+            "x": 736.54,
+            "y": 113.27
+          },
+          {
+            "x": 516.69,
+            "y": 551.71
+          }
+        ]
+      }
+    ],
+    "bounds": {
+      "min_x": 512.0,
+      "max_x": 1800.0,
+      "min_y": 0.0,
+      "max_y": 905.65
+    }
+  },
+  "layout": {
+    "rows": 3,
+    "cols": 4,
+    "width": 2200.0,
+    "height": 1400.0
+  }
+}

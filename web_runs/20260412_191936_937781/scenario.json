@@ -1,0 +1,188 @@
+{
+  "run_id": "20260412_191936_937781",
+  "scenario_name": "area_20260412_191936_937781",
+  "sumocfg_path": "C:\\Users\\santhosh\\OneDrive\\Desktop\\trafiic pro\\web_runs\\20260412_191936_937781\\area.sumocfg",
+  "net_path": "C:\\Users\\santhosh\\OneDrive\\Desktop\\trafiic pro\\web_runs\\20260412_191936_937781\\area.net.xml",
+  "route_path": "C:\\Users\\santhosh\\OneDrive\\Desktop\\trafiic pro\\web_runs\\20260412_191936_937781\\area.rou.xml",
+  "source": "gemini-image-graph",
+  "fallback_reason": null,
+  "user_message": "Created a Gemini-assisted SUMO network with 4 nodes and 3 major-road connections.",
+  "bbox": {
+    "south": 12.932824802124752,
+    "north": 12.93675648249098,
+    "west": 79.14765357971191,
+    "east": 79.1569232940674
+  },
+  "polygon": [
+    {
+      "lat": 12.932824802124752,
+      "lng": 79.14765357971191
+    },
+    {
+      "lat": 12.93675648249098,
+      "lng": 79.14765357971191
+    },
+    {
+      "lat": 12.93675648249098,
+      "lng": 79.1569232940674
+    },
+    {
+      "lat": 12.932824802124752,
+      "lng": 79.1569232940674
+    }
+  ],
+  "preview": {
+    "nodes": [
+      {
+        "id": "J0",
+        "x": 0.0,
+        "y": 140.0,
+        "type": "priority"
+      },
+      {
+        "id": "J1",
+        "x": 180.0,
+        "y": 70.0,
+        "type": "traffic_light"
+      },
+      {
+        "id": "J2",
+        "x": 430.0,
+        "y": 70.0,
+        "type": "priority"
+      },
+      {
+        "id": "J3",
+        "x": 0.0,
+        "y": 0.0,
+        "type": "priority"
+      }
+    ],
+    "edges": [
+      {
+        "id": "R0_J0_J1",
+        "from": "J0",
+        "to": "J1",
+        "lanes": 1,
+        "shape": [
+          {
+            "x": -0.0,
+            "y": 139.25
+          },
+          {
+            "x": 179.25,
+            "y": 139.25
+          },
+          {
+            "x": 179.25,
+            "y": 75.5
+          }
+        ]
+      },
+      {
+        "id": "R0_J1_J0",
+        "from": "J1",
+        "to": "J0",
+        "lanes": 1,
+        "shape": [
+          {
+            "x": 180.75,
+            "y": 75.5
+          },
+          {
+            "x": 180.75,
+            "y": 140.75
+          },
+          {
+            "x": 0.0,
+            "y": 140.75
+          }
+        ]
+      },
+      {
+        "id": "R1_J1_J2",
+        "from": "J1",
+        "to": "J2",
+        "lanes": 1,
+        "shape": [
+          {
+            "x": 185.5,
+            "y": 69.25
+          },
+          {
+            "x": 430.0,
+            "y": 69.25
+          }
+        ]
+      },
+      {
+        "id": "R1_J2_J1",
+        "from": "J2",
+        "to": "J1",
+        "lanes": 1,
+        "shape": [
+          {
+            "x": 430.0,
+            "y": 70.75
+          },
+          {
+            "x": 185.5,
+            "y": 70.75
+          }
+        ]
+      },
+      {
+        "id": "R2_J1_J3",
+        "from": "J1",
+        "to": "J3",
+        "lanes": 1,
+        "shape": [
+          {
+            "x": 179.25,
+            "y": 64.5
+          },
+          {
+            "x": 179.25,
+            "y": 0.75
+          },
+          {
+            "x": -0.0,
+            "y": 0.75
+          }
+        ]
+      },
+      {
+        "id": "R2_J3_J1",
+        "from": "J3",
+        "to": "J1",
+        "lanes": 1,
+        "shape": [
+          {
+            "x": 0.0,
+            "y": -0.75
+          },
+          {
+            "x": 180.75,
+            "y": -0.75
+          },
+          {
+            "x": 180.75,
+            "y": 64.5
+          }
+        ]
+      }
+    ],
+    "bounds": {
+      "min_x": 0.0,
+      "max_x": 430.0,
+      "min_y": 0.0,
+      "max_y": 140.0
+    }
+  },
+  "layout": {
+    "rows": 3,
+    "cols": 4,
+    "width": 960.0,
+    "height": 640.0
+  }
+}

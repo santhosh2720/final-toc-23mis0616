@@ -1,0 +1,73 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Traffic Quantum: Benchmark",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/src/traffic_quantum/cli.py",
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}",
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}/src"
+      },
+      "args": [
+        "benchmark",
+        "--config",
+        "configs/mock_city.toml",
+        "--replications",
+        "2",
+        "--output",
+        "reports"
+      ]
+    },
+    {
+      "name": "Traffic Quantum: Smoke Test",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/src/traffic_quantum/cli.py",
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}",
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}/src"
+      },
+      "args": [
+        "smoke-test",
+        "--controller",
+        "hybrid"
+      ]
+    },
+    {
+      "name": "Traffic Quantum: Train Policy",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/src/traffic_quantum/cli.py",
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}",
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}/src"
+      },
+      "args": [
+        "train-policy",
+        "--config",
+        "configs/mock_city.toml",
+        "--episodes",
+        "5"
+      ]
+    },
+    {
+      "name": "Traffic Quantum: Web Dashboard",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/src/traffic_quantum/cli.py",
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}",
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}/src"
+      },
+      "args": [
+        "serve-web"
+      ]
+    }
+  ]
+}

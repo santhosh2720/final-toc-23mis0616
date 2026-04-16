@@ -1,0 +1,12 @@
+<edges>
+    <edge id="E1_P0_P1" from="P0" to="P1" numLanes="1" speed="13.9" shape="70.0,570.0 356.48,526.19 777.79,536.18"/>
+    <edge id="E1_P1_P0" from="P1" to="P0" numLanes="1" speed="13.9" shape="777.79,536.18 356.48,526.19 70.0,570.0"/>
+    <edge id="E4_P2_P3" from="P2" to="P3" numLanes="1" speed="13.9" shape="190.09,206.93 486.85,168.92 890.0,184.33"/>
+    <edge id="E4_P3_P2" from="P3" to="P2" numLanes="1" speed="13.9" shape="890.0,184.33 486.85,168.92 190.09,206.93"/>
+    <edge id="E6_P0_P2" from="P0" to="P2" numLanes="1" speed="13.9" shape="70.0,570.0 203.59,476.89 226.63,360.63 258.81,244.38 190.09,206.93"/>
+    <edge id="E6_P2_P0" from="P2" to="P0" numLanes="1" speed="13.9" shape="190.09,206.93 258.81,244.38 226.63,360.63 203.59,476.89 70.0,570.0"/>
+    <edge id="E7_P2_P8" from="P2" to="P8" numLanes="1" speed="13.9" shape="190.09,206.93 330.74,128.13 333.33,70.0"/>
+    <edge id="E7_P8_P2" from="P8" to="P2" numLanes="1" speed="13.9" shape="333.33,70.0 330.74,128.13 190.09,206.93"/>
+    <edge id="E8_P1_P3" from="P1" to="P3" numLanes="1" speed="13.9" shape="777.79,536.18 776.13,360.63 810.18,244.38 890.0,184.33"/>
+    <edge id="E8_P3_P1" from="P3" to="P1" numLanes="1" speed="13.9" shape="890.0,184.33 810.18,244.38 776.13,360.63 777.79,536.18"/>
+</edges>

@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "traffic-quantum"
+version = "0.1.0"
+description = "Hybrid traffic signal control with SUMO integration and quantum-inspired optimization."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "numpy>=2.0",
+  "pandas>=2.2",
+  "fastapi>=0.115",
+  "uvicorn>=0.34",
+  "jinja2>=3.1",
+  "pillow>=10.4",
+  "requests>=2.32",
+  "traci>=1.20",
+  "sumolib>=1.20",
+]
+
+[project.optional-dependencies]
+quantum = [
+  "qiskit>=1.1",
+  "pennylane>=0.38",
+]
+dev = [
+  "pytest>=8.2",
+]
+
+[project.scripts]
+traffic-quantum = "traffic_quantum.cli:main"
+traffic-quantum-web = "traffic_quantum.web.app:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

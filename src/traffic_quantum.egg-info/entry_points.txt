@@ -1,0 +1,2 @@
+[console_scripts]
+traffic-quantum = traffic_quantum.cli:main

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Traffic Quantum Image Results</title>
+  <link rel="stylesheet" href="/static/image_results.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="hero">
+      <div>
+        <p class="eyebrow">Image-Based SUMO Benchmark</p>
+        <h1>Quantum-Inspired Traffic Results Dashboard</h1>
+        <p class="lede">
+          Run the latest image-based SUMO scenario, compare fixed, actuated, genetic, and hybrid controllers,
+          and generate the final benchmark charts needed for your journal and project presentation.
+        </p>
+      </div>
+      <div class="hero-actions">
+        <a class="ghost-link" href="/map-dashboard">Open legacy map dashboard</a>
+        <div class="hero-card">
+          <div class="hero-stat">
+            <span class="label">Scenario</span>
+            <span class="value" id="scenario-name">image_interchange_peak</span>
+          </div>
+          <div class="hero-stat">
+            <span class="label">Main Goal</span>
+            <span class="value">Show hybrid outperforming conventional control effectively</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="dashboard-grid">
+      <section class="panel panel-controls">
+        <div class="panel-header">
+          <h2>1. Run Benchmark Analytics</h2>
+          <p>Generate the full controller comparison and all named charts for the latest image-based SUMO scenario.</p>
+        </div>
+        <div class="control-grid">
+          <label>Episode Seconds
+            <input id="episode-seconds" type="number" min="120" step="60" value="300" />
+          </label>
+          <label>Replications
+            <input id="replications" type="number" min="1" max="4" step="1" value="2" />
+          </label>
+        </div>
+        <div class="controls">
+          <button id="run-dashboard">Run Benchmark + Graphs</button>
+          <button id="open-gui-btn">Open SUMO GUI</button>
+          <span id="run-status" class="status-text">Load the latest results or run a fresh benchmark bundle.</span>
+        </div>
+        <div class="artifact-list" id="artifact-list"></div>
+      </section>
+
+      <section class="panel">
+        <div class="panel-header">
+          <h2>2. Scenario Summary</h2>
+          <p>Quick view of the generated SUMO scenario and the latest benchmark highlights.</p>
+        </div>
+        <div id="summary-cards" class="summary-cards"></div>
+      </section>
+
+      <section class="panel panel-wide">
+        <div class="panel-header">
+          <h2>3. Scenario Network Preview</h2>
+          <p>Compact preview of the active image-derived SUMO road network.</p>
+        </div>
+        <svg id="network-preview" viewBox="0 0 900 420" preserveAspectRatio="xMidYMid meet"></svg>
+      </section>
+
+      <section class="panel">
+        <div class="panel-header">
+          <h2>4. Controller Comparison Table</h2>
+          <p>Lower waiting and queue are better. Higher throughput and higher reward score are better.</p>
+        </div>
+        <div id="comparison-table" class="table-wrap"></div>
+      </section>
+
+      <section class="panel">
+        <div class="panel-header">
+          <h2>5. Controller vs Average Waiting Time</h2>
+          <p>Primary benchmark chart for hybrid performance comparison.</p>
+        </div>
+        <svg id="chart-waiting" viewBox="0 0 600 320" preserveAspectRatio="xMidYMid meet"></svg>
+      </section>
+
+      <section class="panel">
+        <div class="panel-header">
+          <h2>6. Controller vs Average Queue Length</h2>
+          <p>Shows how well each controller reduces congestion buildup.</p>
+        </div>
+        <svg id="chart-queue" viewBox="0 0 600 320" preserveAspectRatio="xMidYMid meet"></svg>
+      </section>
+
+      <section class="panel">
+        <div class="panel-header">
+          <h2>7. Controller vs Throughput</h2>
+          <p>Higher throughput means more vehicles successfully crossed the network.</p>
+        </div>
+        <svg id="chart-throughput" viewBox="0 0 600 320" preserveAspectRatio="xMidYMid meet"></svg>
+      </section>
+
+      <section class="panel">
+        <div class="panel-header">
+          <h2>8. Controller vs Reward Score</h2>
+          <p>Positive reward score derived from the raw penalty-style reward so the best controller appears with the highest score.</p>
+        </div>
+        <svg id="chart-reward" viewBox="0 0 600 320" preserveAspectRatio="xMidYMid meet"></svg>
+      </section>
+
+      <section class="panel panel-wide">
+        <div class="panel-header">
+          <h2>9. Grouped Benchmark Comparison</h2>
+          <p>Normalized performance view across all four core metrics.</p>
+        </div>
+        <svg id="chart-grouped" viewBox="0 0 960 360" preserveAspectRatio="xMidYMid meet"></svg>
+      </section>
+
+      <section class="panel panel-wide">
+        <div class="panel-header">
+          <h2>10. Hybrid vs Fixed Time-Series Comparison</h2>
+          <p>Step-wise trend view showing how hybrid and fixed behave over the same simulation horizon.</p>
+        </div>
+        <div class="mini-grid">
+          <div>
+            <h3>Average Waiting Over Time</h3>
+            <svg id="chart-time-wait" viewBox="0 0 460 280" preserveAspectRatio="xMidYMid meet"></svg>
+          </div>
+          <div>
+            <h3>Average Queue Over Time</h3>
+            <svg id="chart-time-queue" viewBox="0 0 460 280" preserveAspectRatio="xMidYMid meet"></svg>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel panel-wide">
+        <div class="panel-header">
+          <h2>11. Junction Heatmap</h2>
+          <p>Hotter and redder junctions indicate heavier queue pressure in the hybrid-run network.</p>
+        </div>
+        <svg id="chart-heatmap" viewBox="0 0 960 360" preserveAspectRatio="xMidYMid meet"></svg>
+      </section>
+    </main>
+  </div>
+
+  <script src="/static/image_results.js"></script>
+</body>
+</html>

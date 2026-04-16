@@ -1,0 +1,16 @@
+<nodes>
+    <node id="P0" x="288.99" y="377.15" type="traffic_light"/>
+    <node id="P1" x="288.99" y="377.15" type="traffic_light"/>
+    <node id="P2" x="288.99" y="192.02" type="traffic_light"/>
+    <node id="P4" x="288.99" y="96.88" type="traffic_light"/>
+    <node id="P5" x="288.99" y="96.88" type="traffic_light"/>
+    <node id="P6" x="55.0" y="377.15" type="priority"/>
+    <node id="P7" x="501.87" y="377.15" type="priority"/>
+    <node id="P8" x="217.5" y="192.02" type="priority"/>
+    <node id="P9" x="705.0" y="192.02" type="priority"/>
+    <node id="P10" x="55.0" y="96.88" type="priority"/>
+    <node id="P11" x="420.63" y="96.88" type="priority"/>
+    <node id="P12" x="288.99" y="415.0" type="priority"/>
+    <node id="P13" x="288.99" y="55.0" type="priority"/>
+    <node id="P14" x="288.99" y="445.0" type="priority"/>
+</nodes>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="Overpass API 0.7.62.11 87bfad18">
+<note>The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.</note>
+<meta osm_base="2026-04-11T08:08:46Z"/>
+
+  <node id="353195171" lat="12.9678761" lon="79.1373565"/>
+  <node id="723864619" lat="12.9658931" lon="79.1373387"/>
+  <node id="1039216184" lat="12.9691175" lon="79.1373025"/>
+  <node id="1040639029" lat="12.9602560" lon="79.1372943"/>
+  <node id="1040878820" lat="12.9657371" lon="79.1373336"/>
+  <node id="1040878874" lat="12.9661854" lon="79.1377326"/>
+  <node id="1040878945" lat="12.9666144" lon="79.1382263"/>
+  <node id="1041344300" lat="12.9703476" lon="79.1371732"/>
+  <node id="1041351656" lat="12.9685484" lon="79.1373632"/>
+  <node id="1041357014" lat="12.9673686" lon="79.1373588"/>
+  <node id="1041360396" lat="12.9680497" lon="79.1373548"/>
+  <node id="1064495359" lat="12.9619045" lon="79.1372998"/>
+  <node id="1064498230" lat="12.9627611" lon="79.1372160"/>
+  <node id="1065084658" lat="12.9660612" lon="79.1375285"/>
+  <node id="1065084659" lat="12.9659937" lon="79.1373456"/>
+  <node id="1065086417" lat="12.9669539" lon="79.1372322"/>
+  <node id="1065086551" lat="12.9654126" lon="79.1372263"/>
+  <node id="9933582718" lat="12.9608760" lon="79.1372913"/>
+  <node id="9969183275" lat="12.9586209" lon="79.1371979"/>
+  <node id="9969183277" lat="12.9600114" lon="79.1372035"/>
+  <node id="9969183278" lat="12.9619134" lon="79.1372113"/>
+  <node id="9969183279" lat="12.9627404" lon="79.1373127"/>
+  <node id="9969183280" lat="12.9653981" lon="79.1373246"/>
+  <node id="9969183281" lat="12.9659905" lon="79.1372285"/>
+  <node id="9969183282" lat="12.9669558" lon="79.1373542"/>
+  <node id="9988805540" lat="12.9625871" lon="79.1373103"/>
+  <node id="9988805546" lat="12.9632928" lon="79.1373152"/>
+  <node id="10048479073" lat="12.9633033" lon="79.1372181"/>
+  <node id="10219868258" lat="12.9661945" lon="79.1373474"/>
+  <node id="10219868259" lat="12.9661809" lon="79.1372292"/>
+  <node id="10219868260" lat="12.9666695" lon="79.1382836"/>
+  <node id="10980490844" lat="12.9587175" lon="79.1371983">
+    <tag k="highway" v="traffic_signals"/>
+    <tag k="traffic_signals" v="signal"/>
+  </node>
+  <node id="10980511627" lat="12.9706804" lon="79.1371550"/>
+  <node id="10980511628" lat="12.9685965" lon="79.1373367"/>
+  <node id="10980511629" lat="12.9685507" lon="79.1373006"/>
+  <node id="10980511630" lat="12.9673705" lon="79.1374217"/>
+  <node id="10980511633" lat="12.9670220" lon="79.1374264"/>
+  <node id="10980511634" lat="12.9663570" lon="79.1373988"/>
+  <node id="11288396703" lat="12.9704398" lon="79.1371682"/>
+  <node id="11288396742" lat="12.9689444" lon="79.1373139"/>
+  <node id="11288396743" lat="12.9683326" lon="79.1372913"/>
+  <node id="11288396744" lat="12.9678724" lon="79.1372715"/>
+  <node id="11288396748" lat="12.9641397" lon="79.1373190"/>
+  <node id="11288396750" lat="12.9637320" lon="79.1373172"/>
+  <node id="12468536269" lat="12.9661131" lon="79.1376138"/>
+  <node id="12468536270" lat="12.9659700" lon="79.1375342"/>
+  <node id="12468536271" lat="12.9658414" lon="79.1374335"/>
+  <node id="12468536272" lat="12.9657062" lon="79.1373328"/>
+  <way id="106223901">
+    <nd ref="10980511627"/>
+    <nd ref="11288396703"/>
+    <nd ref="1041344300"/>
+    <nd ref="1039216184"/>
+    <nd ref="11288396742"/>
+    <nd ref="10980511628"/>
+    <nd ref="1041351656"/>
+    <nd ref="1041360396"/>
+    <nd ref="353195171"/>
+    <nd ref="1041357014"/>
+    <nd ref="9969183282"/>
+    <nd ref="10219868258"/>
+    <tag k="highway" v="trunk"/>
+    <tag k="lanes" v="2"/>
+    <tag k="ref" v="NH75"/>
+    <tag k="ref:old" v="NH234"/>
+  </way>
+  <way id="1088063213">
+    <nd ref="9969183275"/>
+    <nd ref="10980490844"/>
+    <nd ref="9969183277"/>
+    <nd ref="9969183278"/>
+    <nd ref="1064498230"/>
+    <nd ref="10048479073"/>
+    <nd ref="1065086551"/>
+    <nd ref="9969183281"/>
+    <tag k="highway" v="trunk"/>
+    <tag k="lanes" v="2"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="ref" v="NH75"/>
+    <tag k="surface" v="asphalt"/>
+  </way>
+  <way id="1088063215">
+    <nd ref="1065084659"/>
+    <nd ref="9969183281"/>
+    <tag k="highway" v="primary"/>
+  </way>
+  <way id="1117411972">
+    <nd ref="10219868258"/>
+    <nd ref="1040878874"/>
+    <tag k="highway" v="primary_link"/>
+    <tag k="oneway" v="yes"/>
+  </way>
+  <way id="1117411973">
+    <nd ref="10219868260"/>
+    <nd ref="1040878945"/>
+    <nd ref="1040878874"/>
+    <nd ref="12468536269"/>
+    <nd ref="1065084658"/>
+    <nd ref="1065084659"/>
+    <tag k="highway" v="primary"/>
+    <tag k="name" v="Tiruvalam - Katpadi - Venkatagirikottah Road"/>
+    <tag k="ref" v="SH59"/>
+  </way>
+  <way id="1182448051">
+    <nd ref="10980511630"/>
+    <nd ref="10980511633"/>
+    <nd ref="10980511634"/>
+    <tag k="footway" v="sidewalk"/>
+    <tag k="highway" v="footway"/>
+  </way>
+  <way id="1182449833">
+    <nd ref="9969183281"/>
+    <nd ref="10219868259"/>
+    <tag k="highway" v="trunk"/>
+    <tag k="lanes" v="2"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="ref" v="NH75"/>
+    <tag k="surface" v="asphalt"/>
+  </way>
+  <way id="1182449834">
+    <nd ref="1065084659"/>
+    <nd ref="723864619"/>
+    <nd ref="1040878820"/>
+    <nd ref="12468536272"/>
+    <nd ref="9969183280"/>
+    <nd ref="11288396748"/>
+    <nd ref="11288396750"/>
+    <nd ref="9988805546"/>
+    <nd ref="9969183279"/>
+    <nd ref="9988805540"/>
+    <nd ref="1064495359"/>
+    <nd ref="9933582718"/>
+    <nd ref="1040639029"/>
+    <tag k="highway" v="trunk"/>
+    <tag k="lanes" v="2"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="ref" v="NH75"/>
+    <tag k="ref:old" v="NH234"/>
+  </way>
+  <way id="1182449835">
+    <nd ref="10219868258"/>
+    <nd ref="1065084659"/>
+    <tag k="highway" v="trunk"/>
+    <tag k="lanes" v="2"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="ref" v="NH75"/>
+    <tag k="ref:old" v="NH234"/>
+  </way>
+  <way id="1182449837">
+    <nd ref="10219868259"/>
+    <nd ref="1065086417"/>
+    <nd ref="11288396744"/>
+    <nd ref="11288396743"/>
+    <nd ref="10980511629"/>
+    <nd ref="10980511628"/>
+    <tag k="highway" v="trunk"/>
+    <tag k="lanes" v="2"/>
+    <tag k="oneway" v="yes"/>
+    <tag k="ref" v="NH75"/>
+    <tag k="surface" v="asphalt"/>
+  </way>
+  <way id="1347939838">
+    <nd ref="12468536269"/>
+    <nd ref="12468536270"/>
+    <nd ref="12468536271"/>
+    <nd ref="12468536272"/>
+    <tag k="highway" v="primary_link"/>
+    <tag k="oneway" v="yes"/>
+  </way>
+
+</osm>

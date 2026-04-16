@@ -1,0 +1,1307 @@
+{
+  "run_id": "20260411_221729_301737",
+  "selected_controller": "hybrid",
+  "metrics": [
+    {
+      "controller": "fixed",
+      "scenario": "area_run",
+      "avg_waiting_time": 28.366666666666667,
+      "avg_queue_length": 3.35,
+      "throughput": 0.0,
+      "avg_reward": -6.480019841269841,
+      "stops_per_vehicle": 0.0,
+      "emergency_delay": 0.0,
+      "total_steps": 120
+    },
+    {
+      "controller": "actuated",
+      "scenario": "area_run",
+      "avg_waiting_time": 43.4,
+      "avg_queue_length": 4.066666666666666,
+      "throughput": 0.0,
+      "avg_reward": -9.14187996031746,
+      "stops_per_vehicle": 0.0,
+      "emergency_delay": 0.0,
+      "total_steps": 120
+    },
+    {
+      "controller": "genetic",
+      "scenario": "area_run",
+      "avg_waiting_time": 50.34166666666667,
+      "avg_queue_length": 4.041666666666667,
+      "throughput": 0.0,
+      "avg_reward": -8.89545386904762,
+      "stops_per_vehicle": 0.0,
+      "emergency_delay": 0.0,
+      "total_steps": 120
+    },
+    {
+      "controller": "hybrid",
+      "scenario": "area_run",
+      "avg_waiting_time": 28.366666666666667,
+      "avg_queue_length": 3.35,
+      "throughput": 0.0,
+      "avg_reward": -6.480019841269841,
+      "stops_per_vehicle": 0.0,
+      "emergency_delay": 0.0,
+      "total_steps": 120
+    }
+  ],
+  "summary": [
+    {
+      "controller": "actuated",
+      "scenario": "area_run",
+      "avg_waiting_time_mean": 43.4,
+      "avg_waiting_time_std": NaN,
+      "avg_queue_length_mean": 4.066666666666666,
+      "throughput_mean": 0.0,
+      "avg_reward_mean": -9.14187996031746,
+      "stops_per_vehicle_mean": 0.0,
+      "emergency_delay_mean": 0.0,
+      "runs": 1,
+      "wait_ci95": 0.0
+    },
+    {
+      "controller": "fixed",
+      "scenario": "area_run",
+      "avg_waiting_time_mean": 28.366666666666667,
+      "avg_waiting_time_std": NaN,
+      "avg_queue_length_mean": 3.35,
+      "throughput_mean": 0.0,
+      "avg_reward_mean": -6.480019841269841,
+      "stops_per_vehicle_mean": 0.0,
+      "emergency_delay_mean": 0.0,
+      "runs": 1,
+      "wait_ci95": 0.0
+    },
+    {
+      "controller": "genetic",
+      "scenario": "area_run",
+      "avg_waiting_time_mean": 50.34166666666667,
+      "avg_waiting_time_std": NaN,
+      "avg_queue_length_mean": 4.041666666666667,
+      "throughput_mean": 0.0,
+      "avg_reward_mean": -8.89545386904762,
+      "stops_per_vehicle_mean": 0.0,
+      "emergency_delay_mean": 0.0,
+      "runs": 1,
+      "wait_ci95": 0.0
+    },
+    {
+      "controller": "hybrid",
+      "scenario": "area_run",
+      "avg_waiting_time_mean": 28.366666666666667,
+      "avg_waiting_time_std": NaN,
+      "avg_queue_length_mean": 3.35,
+      "throughput_mean": 0.0,
+      "avg_reward_mean": -6.480019841269841,
+      "stops_per_vehicle_mean": 0.0,
+      "emergency_delay_mean": 0.0,
+      "runs": 1,
+      "wait_ci95": 0.0
+    }
+  ],
+  "trace": {
+    "run_id": "20260411_221729_301737",
+    "controller": "hybrid",
+    "steps": [
+      {
+        "time_seconds": 0,
+        "controller": "hybrid",
+        "actions": {
+          "J0_0": "ns_green",
+          "J1_0": "ns_green",
+          "J2_0": "ns_green"
+        },
+        "intersections": {
+          "J0_0": {
+            "current_phase": "ns_green",
+            "phase_age": 0,
+            "total_queue": 4.0,
+            "total_wait": 0.0,
+            "approaches": {
+              "north": {
+                "queue_length": 0.0,
+                "avg_speed": 0.0,
+                "occupancy": 0.0,
+                "waiting_time": 0.0
+              },
+              "south": {
+                "queue_length": 0.0,
+                "avg_speed": 0.0,
+                "occupancy": 0.0,
+                "waiting_time": 0.0
+              },
+              "east": {
+                "queue_length": 0.0,
+                "avg_speed": 0.0,
+                "occupancy": 0.0,
+                "waiting_time": 0.0
+              },
+              "west": {
+                "queue_length": 4.0,
+                "avg_speed": 7.029,
+                "occupancy": 0.0,
+                "waiting_time": 0.0
+              }
+            },
+            "decision": {
+              "forecast_score": 0.3257,
+              "ns_pressure": 0.0,
+              "ew_pressure": 4.0,
+              "chosen_action": "ns_green",
+              "optimizer_action": "ew_green",
+              "action_rewards": {
+                "ns_green": -0.8769,
+                "ew_green": 1.1231
+              },
+              "one_hot_penalty": 36.0,
+              "coordination_bonus": -10.0,
+              "message": "North-south green was selected because north-south pressure (0.00) is dominant and forecast congestion is 0.33."
+            }
+          },
+          "J1_0": {
+            "current_phase": "ns_green",
+            "phase_age": 0,
+            "total_queue": 0.0,
+            "total_wait": 0.0,
+            "approaches": {
+              "north": {
+                "queue_length": 0.0,
+                "avg_speed": 0.0,
+                "occupancy": 0.0,
+                "waiting_time": 0.0
+              },
+              "south": {
+                "queue_length": 0.0,
+                "avg_speed": 0.0,
+                "occupancy": 0.0,
+                "waiting_time": 0.0
+              },
+              "east": {
+                "queue_length": 0.0,
+                "avg_speed": 0.0,
+                "occupancy": 0.0,
+                "waiting_time": 0.0
+              },
+              "west": {
+                "queue_length": 0.0,
+                "avg_speed": 12.233,
+                "occupancy": 0.0,
+                "waiting_time": 0.0
+              }
+            },
+            "decision": {
+              "forecast_score": 0.3264,
+              "ns_pressure": 0.0,
+              "ew_pressure": 0.0,
+              "chosen_action": "ns_green",
+              "optimizer_action": "ew_green",
+              "action_rewards": {
+                "ns_green": -0.2774,
+                "ew_green": -0.2774
+              },
+              "one_hot_penalty": 36.0,
+              "coordination_bonus": -10.0,
+              "message": "North-south green was selected because north-south pressure (0.00) is dominant and forecast congestion is 0.33."
+            }
+          },
+          "J2_0": {
+            "current_phase": "ns_green",
+            "phase_age": 0,
+            "total_queue": 0.0,
+            "total_wait": 0.0,
+            "approaches": {
+              "north": {
+                "queue_length": 0.0,
+                "avg_speed": 0.0,
+                "occupancy": 0.0,
+                "waiting_time": 0.0
+              },
+              "south": {
+                "queue_length": 0.0,
+                "avg_speed": 0.0,
+                "occupancy": 0.0,
+                "waiting_time": 0.0
+              },
+              "east": {
+                "queue_length": 0.0,
+                "avg_speed": 0.0,
+                "occupancy": 0.0,
+                "waiting_time": 0.0
+              },
+              "west": {
+                "queue_length": 0.0,
+                "avg_speed": 12.862,
+                "occupancy": 0.0,
+                "waiting_time": 0.0
+              }
+            },
+            "decision": {
+              "forecast_score": 0.3268,
+              "ns_pressure": 0.0,
+              "ew_pressure": 0.0,
+              "chosen_action": "ns_green",
+              "optimizer_action": "ew_green",
+              "action_rewards": {
+                "ns_green": -0.2778,
+                "ew_green": -0.2778
+              },
+              "one_hot_penalty": 36.0,
+              "coordination_bonus": -10.0,
+              "message": "North-south green was selected because north-south pressure (0.00) is dominant and forecast congestion is 0.33."
+            }
+          }
+        }
+      },
+      {
+        "time_seconds": 15,
+        "controller": "hybrid",
+        "actions": {
+          "J0_0": "ns_green",
+          "J1_0": "ns_green",
+          "J2_0": "ns_green"
+        },
+        "intersections": {
+          "J0_0": {
+            "current_phase": "ns_green",
+            "phase_age": 15,
+            "total_queue": 0.0,
+            "total_wait": 0.0,
+            "approaches": {
+              "north": {
+                "queue_length": 0.0,
+                "avg_speed": 0.0,
+                "occupancy": 0.0,
+                "waiting_time": 0.0
+              },
+              "south": {
+                "queue_length": 0.0,
+                "avg_speed": 0.0,
+                "occupancy": 0.0,
+                "waiting_time": 0.0
+              },
+              "east": {
+                "queue_length": 0.0,
+                "avg_speed": 0.0,
+                "occupancy": 0.0,
+                "waiting_time": 0.0
+              },
+              "west": {
+                "queue_length": 0.0,
+                "avg_speed": 12.046,
+                "occupancy": 0.0,
+                "waiting_time": 0.0
+              }
+            },
+            "decision": {
+              "forecast_score": 0.3268,
+              "ns_pressure": 0.0,
+              "ew_pressure": 0.0,
+              "chosen_action": "ns_green",
+              "optimizer_action": "ns_green",
+              "action_rewards": {
+                "ns_green": -0.2778,
+                "ew_green": -0.2778
+              },
+              "one_hot_penalty": 36.0,
+              "coordination_bonus": -10.0,
+              "message": "North-south green was selected because north-south pressure (0.00) is dominant and forecast congestion is 0.33."
+            }
+          },
+          "J1_0": {
+            "current_phase": "ns_green",
+            "phase_age": 15,
+            "total_queue": 0.0,
+            "total_wait": 0.0,
+            "approaches": {
+              "north": {
+                "queue_length": 0.0,
+                "avg_speed": 0.0,
+                "occupancy": 0.0,
+                "waiting_time": 0.0
+              },
+              "south": {
+                "queue_length": 0.0,
+                "avg_speed": 0.0,
+                "occupancy": 0.0,
+                "waiting_time": 0.0
+              },
+              "east": {
+                "queue_length": 0.0,
+                "avg_speed": 0.0,
+                "occupancy": 0.0,
+                "waiting_time": 0.0
+              },
+              "west": {
+                "queue_length": 0.0,
+                "avg_speed": 13.532,
+                "occupancy": 0.0,
+                "waiting_time": 0.0
+              }
+            },
+            "decision": {
+              "forecast_score": 0.3264,
+              "ns_pressure": 0.0,
+              "ew_pressure": 0.0,
+              "chosen_action": "ns_green",
+              "optimizer_action": "ns_green",
+              "action_rewards": {
+                "ns_green": -0.2775,
+                "ew_green": -0.2775
+              },
+              "one_hot_penalty": 36.0,
+              "coordination_bonus": -10.0,
+              "message": "North-south green was selected because north-south pressure (0.00) is dominant and forecast congestion is 0.33."
+            }
+          },
+          "J2_0": {
+            "current_phase": "ns_green",
+            "phase_age": 15,
+            "total_queue": 4.0,
+            "total_wait": 0.0,
+            "approaches": {
+              "north": {
+                "queue_length": 0.0,
+                "avg_speed": 0.0,
+                "occupancy": 0.0,
+                "waiting_time": 0.0
+              },
+              "south": {
+                "queue_length": 0.0,
+                "avg_speed": 0.0,
+                "occupancy": 0.0,
+                "waiting_time": 0.0
+              },
+              "east": {
+                "queue_length": 0.0,
+                "avg_speed": 0.0,
+                "occupancy": 0.0,
+                "waiting_time": 0.0
+              },
+              "west": {
+                "queue_length": 4.0,
+                "avg_speed": 10.72,
+                "occupancy": 0.0,
+                "waiting_time": 0.0
+              }
+            },
+            "decision": {
+              "forecast_score": 0.3259,
+              "ns_pressure": 0.0,
+              "ew_pressure": 4.0,
+              "chosen_action": "ns_green",
+              "optimizer_action": "ns_green",
+              "action_rewards": {
+                "ns_green": -0.877,
+                "ew_green": 1.123
+              },
+              "one_hot_penalty": 36.0,
+              "coordination_bonus": -10.0,
+              "message": "North-south green was selected because north-south pressure (0.00) is dominant and forecast congestion is 0.33."
+            }
+          }
+        }
+      },
+      {
+        "time_seconds": 30,
+        "controller": "hybrid",
+        "actions": {
+          "J0_0": "ew_green",
+          "J1_0": "ew_green",
+          "J2_0": "ew_green"
+        },
+        "intersections": {
+          "J0_0": {
+            "current_phase": "ns_green",
+            "phase_age": 30,
+            "total_queue": 4.0,
+            "total_wait": 0.0,
+            "approaches": {
+              "north": {
+                "queue_length": 0.0,
+                "avg_speed": 0.0,
+                "occupancy": 0.0,
+                "waiting_time": 0.0
+              },
+              "south": {
+                "queue_length": 0.0,
+                "avg_speed": 0.0,
+                "occupancy": 0.0,
+                "waiting_time": 0.0
+              },
+              "east": {
+                "queue_length": 0.0,
+                "avg_speed": 0.0,
+                "occupancy": 0.0,
+                "waiting_time": 0.0
+              },
+              "west": {
+                "queue_length": 4.0,
+                "avg_speed": 11.446,
+                "occupancy": 0.0,
+                "waiting_time": 0.0
+              }
+            },
+            "decision": {
+              "forecast_score": 0.3257,
+              "ns_pressure": 0.0,
+              "ew_pressure": 4.0,
+              "chosen_action": "ew_green",
+              "optimizer_action": "ew_green",
+              "action_rewards": {
+                "ns_green": -0.8768,
+                "ew_green": 1.1232
+              },
+              "one_hot_penalty": 36.0,
+              "coordination_bonus": -10.0,
+              "message": "East-west green was selected because east-west pressure (4.00) is dominant and forecast congestion is 0.33."
+            }
+          },
+          "J1_0": {
+            "current_phase": "ns_green",
+            "phase_age": 30,
+            "total_queue": 0.0,
+            "total_wait": 0.0,
+            "approaches": {
+              "north": {
+                "queue_length": 0.0,
+                "avg_speed": 0.0,
+                "occupancy": 0.0,
+                "waiting_time": 0.0
+              },
+              "south": {
+                "queue_length": 0.0,
+                "avg_speed": 0.0,
+                "occupancy": 0.0,
+                "waiting_time": 0.0
+              },
+              "east": {
+                "queue_length": 0.0,
+                "avg_speed": 0.0,
+                "occupancy": 0.0,
+                "waiting_time": 0.0
+              },
+              "west": {
+                "queue_length": 0.0,
+                "avg_speed": 13.095,
+                "occupancy": 0.0,
+                "waiting_time": 0.0
+              }
+            },
+            "decision": {
+              "forecast_score": 0.3258,
+              "ns_pressure": 0.0,
+              "ew_pressure": 0.0,
+              "chosen_action": "ew_green",
+              "optimizer_action": "ew_green",
+              "action_rewards": {
+                "ns_green": -0.277,
+                "ew_green": -0.277
+              },
+              "one_hot_penalty": 36.0,
+              "coordination_bonus": -10.0,
+              "message": "East-west green was selected because east-west pressure (0.00) is dominant and forecast congestion is 0.33."
+            }
+          },
+          "J2_0": {
+            "current_phase": "ns_green",
+            "phase_age": 30,
+            "total_queue": 4.0,
+            "total_wait": 0.0,
+            "approaches": {
+              "north": {
+                "queue_length": 0.0,
+                "avg_speed": 0.0,
+                "occupancy": 0.0,
+                "waiting_time": 0.0
+              },
+              "south": {
+                "queue_length": 0.0,
+                "avg_speed": 0.0,
+                "occupancy": 0.0,
+                "waiting_time": 0.0
+              },
+              "east": {
+                "queue_length": 0.0,
+                "avg_speed": 0.0,
+                "occupancy": 0.0,
+                "waiting_time": 0.0
+              },
+              "west": {
+                "queue_length": 4.0,
+                "avg_speed": 12.249,
+                "occupancy": 0.0,
+                "waiting_time": 0.0
+              }
+            },
+            "decision": {
+              "forecast_score": 0.3257,
+              "ns_pressure": 0.0,
+              "ew_pressure": 4.0,
+              "chosen_action": "ew_green",
+              "optimizer_action": "ew_green",
+              "action_rewards": {
+                "ns_green": -0.8768,
+                "ew_green": 1.1232
+              },
+              "one_hot_penalty": 36.0,
+              "coordination_bonus": -10.0,
+              "message": "East-west green was selected because east-west pressure (4.00) is dominant and forecast congestion is 0.33."
+            }
+          }
+        }
+      },
+      {
+        "time_seconds": 45,
+        "controller": "hybrid",
+        "actions": {
+          "J0_0": "ew_green",
+          "J1_0": "ew_green",
+          "J2_0": "ew_green"
+        },
+        "intersections": {
+          "J0_0": {
+            "current_phase": "ew_green",
+            "phase_age": 0,
+            "total_queue": 0.0,
+            "total_wait": 0.0,
+            "approaches": {
+              "north": {
+                "queue_length": 0.0,
+                "avg_speed": 0.0,
+                "occupancy": 0.0,
+                "waiting_time": 0.0
+              },
+              "south": {
+                "queue_length": 0.0,
+                "avg_speed": 0.0,
+                "occupancy": 0.0,
+                "waiting_time": 0.0
+              },
+              "east": {
+                "queue_length": 0.0,
+                "avg_speed": 0.0,
+                "occupancy": 0.0,
+                "waiting_time": 0.0
+              },
+              "west": {
+                "queue_length": 0.0,
+                "avg_speed": 12.047,
+                "occupancy": 0.0,
+                "waiting_time": 0.0
+              }
+            },
+            "decision": {
+              "forecast_score": 0.327,
+              "ns_pressure": 0.0,
+              "ew_pressure": 0.0,
+              "chosen_action": "ew_green",
+              "optimizer_action": "ns_green",
+              "action_rewards": {
+                "ns_green": -0.278,
+                "ew_green": -0.278
+              },
+              "one_hot_penalty": 36.0,
+              "coordination_bonus": -10.0,
+              "message": "East-west green was selected because east-west pressure (0.00) is dominant and forecast congestion is 0.33."
+            }
+          },
+          "J1_0": {
+            "current_phase": "ew_green",
+            "phase_age": 0,
+            "total_queue": 0.0,
+            "total_wait": 0.0,
+            "approaches": {
+              "north": {
+                "queue_length": 0.0,
+                "avg_speed": 0.0,
+                "occupancy": 0.0,
+                "waiting_time": 0.0
+              },
+              "south": {
+                "queue_length": 0.0,
+                "avg_speed": 0.0,
+                "occupancy": 0.0,
+                "waiting_time": 0.0
+              },
+              "east": {
+                "queue_length": 0.0,
+                "avg_speed": 0.0,
+                "occupancy": 0.0,
+                "waiting_time": 0.0
+              },
+              "west": {
+                "queue_length": 0.0,
+                "avg_speed": 12.25,
+                "occupancy": 0.0,
+                "waiting_time": 0.0
+              }
+            },
+            "decision": {
+              "forecast_score": 0.3271,
+              "ns_pressure": 0.0,
+              "ew_pressure": 0.0,
+              "chosen_action": "ew_green",
+              "optimizer_action": "ns_green",
+              "action_rewards": {
+                "ns_green": -0.278,
+                "ew_green": -0.278
+              },
+              "one_hot_penalty": 36.0,
+              "coordination_bonus": -10.0,
+              "message": "East-west green was selected because east-west pressure (0.00) is dominant and forecast congestion is 0.33."
+            }
+          },
+          "J2_0": {
+            "current_phase": "ew_green",
+            "phase_age": 0,
+            "total_queue": 0.0,
+            "total_wait": 0.0,
+            "approaches": {
+              "north": {
+                "queue_length": 0.0,
+                "avg_speed": 0.0,
+                "occupancy": 0.0,
+                "waiting_time": 0.0
+              },
+              "south": {
+                "queue_length": 0.0,
+                "avg_speed": 0.0,
+                "occupancy": 0.0,
+                "waiting_time": 0.0
+              },
+              "east": {
+                "queue_length": 0.0,
+                "avg_speed": 0.0,
+                "occupancy": 0.0,
+                "waiting_time": 0.0
+              },
+              "west": {
+                "queue_length": 0.0,
+                "avg_speed": 12.977,
+                "occupancy": 0.0,
+                "waiting_time": 0.0
+              }
+            },
+            "decision": {
+              "forecast_score": 0.3271,
+              "ns_pressure": 0.0,
+              "ew_pressure": 0.0,
+              "chosen_action": "ew_green",
+              "optimizer_action": "ns_green",
+              "action_rewards": {
+                "ns_green": -0.278,
+                "ew_green": -0.278
+              },
+              "one_hot_penalty": 36.0,
+              "coordination_bonus": -10.0,
+              "message": "East-west green was selected because east-west pressure (0.00) is dominant and forecast congestion is 0.33."
+            }
+          }
+        }
+      },
+      {
+        "time_seconds": 60,
+        "controller": "hybrid",
+        "actions": {
+          "J0_0": "ns_green",
+          "J1_0": "ns_green",
+          "J2_0": "ns_green"
+        },
+        "intersections": {
+          "J0_0": {
+            "current_phase": "ew_green",
+            "phase_age": 15,
+            "total_queue": 0.0,
+            "total_wait": 0.0,
+            "approaches": {
+              "north": {
+                "queue_length": 0.0,
+                "avg_speed": 0.0,
+                "occupancy": 0.0,
+                "waiting_time": 0.0
+              },
+              "south": {
+                "queue_length": 0.0,
+                "avg_speed": 0.0,
+                "occupancy": 0.0,
+                "waiting_time": 0.0
+              },
+              "east": {
+                "queue_length": 0.0,
+                "avg_speed": 0.0,
+                "occupancy": 0.0,
+                "waiting_time": 0.0
+              },
+              "west": {
+                "queue_length": 0.0,
+                "avg_speed": 12.072,
+                "occupancy": 0.0,
+                "waiting_time": 0.0
+              }
+            },
+            "decision": {
+              "forecast_score": 0.3271,
+              "ns_pressure": 0.0,
+              "ew_pressure": 0.0,
+              "chosen_action": "ns_green",
+              "optimizer_action": "ns_green",
+              "action_rewards": {
+                "ns_green": -0.278,
+                "ew_green": -0.278
+              },
+              "one_hot_penalty": 36.0,
+              "coordination_bonus": -10.0,
+              "message": "North-south green was selected because north-south pressure (0.00) is dominant and forecast congestion is 0.33."
+            }
+          },
+          "J1_0": {
+            "current_phase": "ew_green",
+            "phase_age": 15,
+            "total_queue": 0.0,
+            "total_wait": 0.0,
+            "approaches": {
+              "north": {
+                "queue_length": 0.0,
+                "avg_speed": 0.0,
+                "occupancy": 0.0,
+                "waiting_time": 0.0
+              },
+              "south": {
+                "queue_length": 0.0,
+                "avg_speed": 0.0,
+                "occupancy": 0.0,
+                "waiting_time": 0.0
+              },
+              "east": {
+                "queue_length": 0.0,
+                "avg_speed": 0.0,
+                "occupancy": 0.0,
+                "waiting_time": 0.0
+              },
+              "west": {
+                "queue_length": 0.0,
+                "avg_speed": 12.738,
+                "occupancy": 0.0,
+                "waiting_time": 0.0
+              }
+            },
+            "decision": {
+              "forecast_score": 0.3271,
+              "ns_pressure": 0.0,
+              "ew_pressure": 0.0,
+              "chosen_action": "ns_green",
+              "optimizer_action": "ns_green",
+              "action_rewards": {
+                "ns_green": -0.278,
+                "ew_green": -0.278
+              },
+              "one_hot_penalty": 36.0,
+              "coordination_bonus": -10.0,
+              "message": "North-south green was selected because north-south pressure (0.00) is dominant and forecast congestion is 0.33."
+            }
+          },
+          "J2_0": {
+            "current_phase": "ew_green",
+            "phase_age": 15,
+            "total_queue": 0.0,
+            "total_wait": 0.0,
+            "approaches": {
+              "north": {
+                "queue_length": 0.0,
+                "avg_speed": 0.0,
+                "occupancy": 0.0,
+                "waiting_time": 0.0
+              },
+              "south": {
+                "queue_length": 0.0,
+                "avg_speed": 0.0,
+                "occupancy": 0.0,
+                "waiting_time": 0.0
+              },
+              "east": {
+                "queue_length": 0.0,
+                "avg_speed": 0.0,
+                "occupancy": 0.0,
+                "waiting_time": 0.0
+              },
+              "west": {
+                "queue_length": 0.0,
+                "avg_speed": 12.492,
+                "occupancy": 0.0,
+                "waiting_time": 0.0
+              }
+            },
+            "decision": {
+              "forecast_score": 0.3271,
+              "ns_pressure": 0.0,
+              "ew_pressure": 0.0,
+              "chosen_action": "ns_green",
+              "optimizer_action": "ns_green",
+              "action_rewards": {
+                "ns_green": -0.278,
+                "ew_green": -0.278
+              },
+              "one_hot_penalty": 36.0,
+              "coordination_bonus": -10.0,
+              "message": "North-south green was selected because north-south pressure (0.00) is dominant and forecast congestion is 0.33."
+            }
+          }
+        }
+      },
+      {
+        "time_seconds": 75,
+        "controller": "hybrid",
+        "actions": {
+          "J0_0": "ns_green",
+          "J1_0": "ns_green",
+          "J2_0": "ns_green"
+        },
+        "intersections": {
+          "J0_0": {
+            "current_phase": "ns_green",
+            "phase_age": 0,
+            "total_queue": 4.0,
+            "total_wait": 40.0,
+            "approaches": {
+              "north": {
+                "queue_length": 0.0,
+                "avg_speed": 0.0,
+                "occupancy": 0.0,
+                "waiting_time": 0.0
+              },
+              "south": {
+                "queue_length": 0.0,
+                "avg_speed": 0.0,
+                "occupancy": 0.0,
+                "waiting_time": 0.0
+              },
+              "east": {
+                "queue_length": 0.0,
+                "avg_speed": 0.0,
+                "occupancy": 0.0,
+                "waiting_time": 0.0
+              },
+              "west": {
+                "queue_length": 4.0,
+                "avg_speed": 11.489,
+                "occupancy": 0.0,
+                "waiting_time": 40.0
+              }
+            },
+            "decision": {
+              "forecast_score": 0.3248,
+              "ns_pressure": 0.0,
+              "ew_pressure": 4.0,
+              "chosen_action": "ns_green",
+              "optimizer_action": "ew_green",
+              "action_rewards": {
+                "ns_green": -0.876,
+                "ew_green": 1.124
+              },
+              "one_hot_penalty": 36.0,
+              "coordination_bonus": -10.0,
+              "message": "North-south green was selected because north-south pressure (0.00) is dominant and forecast congestion is 0.32."
+            }
+          },
+          "J1_0": {
+            "current_phase": "ns_green",
+            "phase_age": 0,
+            "total_queue": 0.0,
+            "total_wait": 0.0,
+            "approaches": {
+              "north": {
+                "queue_length": 0.0,
+                "avg_speed": 0.0,
+                "occupancy": 0.0,
+                "waiting_time": 0.0
+              },
+              "south": {
+                "queue_length": 0.0,
+                "avg_speed": 0.0,
+                "occupancy": 0.0,
+                "waiting_time": 0.0
+              },
+              "east": {
+                "queue_length": 0.0,
+                "avg_speed": 0.0,
+                "occupancy": 0.0,
+                "waiting_time": 0.0
+              },
+              "west": {
+                "queue_length": 0.0,
+                "avg_speed": 11.836,
+                "occupancy": 0.0,
+                "waiting_time": 0.0
+              }
+            },
+            "decision": {
+              "forecast_score": 0.3253,
+              "ns_pressure": 0.0,
+              "ew_pressure": 0.0,
+              "chosen_action": "ns_green",
+              "optimizer_action": "ew_green",
+              "action_rewards": {
+                "ns_green": -0.2765,
+                "ew_green": -0.2765
+              },
+              "one_hot_penalty": 36.0,
+              "coordination_bonus": -10.0,
+              "message": "North-south green was selected because north-south pressure (0.00) is dominant and forecast congestion is 0.33."
+            }
+          },
+          "J2_0": {
+            "current_phase": "ns_green",
+            "phase_age": 0,
+            "total_queue": 4.0,
+            "total_wait": 8.0,
+            "approaches": {
+              "north": {
+                "queue_length": 0.0,
+                "avg_speed": 0.0,
+                "occupancy": 0.0,
+                "waiting_time": 0.0
+              },
+              "south": {
+                "queue_length": 0.0,
+                "avg_speed": 0.0,
+                "occupancy": 0.0,
+                "waiting_time": 0.0
+              },
+              "east": {
+                "queue_length": 0.0,
+                "avg_speed": 0.0,
+                "occupancy": 0.0,
+                "waiting_time": 0.0
+              },
+              "west": {
+                "queue_length": 4.0,
+                "avg_speed": 11.756,
+                "occupancy": 0.0,
+                "waiting_time": 8.0
+              }
+            },
+            "decision": {
+              "forecast_score": 0.3255,
+              "ns_pressure": 0.0,
+              "ew_pressure": 4.0,
+              "chosen_action": "ns_green",
+              "optimizer_action": "ew_green",
+              "action_rewards": {
+                "ns_green": -0.8767,
+                "ew_green": 1.1233
+              },
+              "one_hot_penalty": 36.0,
+              "coordination_bonus": -10.0,
+              "message": "North-south green was selected because north-south pressure (0.00) is dominant and forecast congestion is 0.33."
+            }
+          }
+        }
+      },
+      {
+        "time_seconds": 90,
+        "controller": "hybrid",
+        "actions": {
+          "J0_0": "ew_green",
+          "J1_0": "ew_green",
+          "J2_0": "ew_green"
+        },
+        "intersections": {
+          "J0_0": {
+            "current_phase": "ns_green",
+            "phase_age": 15,
+            "total_queue": 20.0,
+            "total_wait": 224.0,
+            "approaches": {
+              "north": {
+                "queue_length": 0.0,
+                "avg_speed": 0.0,
+                "occupancy": 0.0,
+                "waiting_time": 0.0
+              },
+              "south": {
+                "queue_length": 0.0,
+                "avg_speed": 0.0,
+                "occupancy": 0.0,
+                "waiting_time": 0.0
+              },
+              "east": {
+                "queue_length": 0.0,
+                "avg_speed": 0.0,
+                "occupancy": 0.0,
+                "waiting_time": 0.0
+              },
+              "west": {
+                "queue_length": 20.0,
+                "avg_speed": 10.375,
+                "occupancy": 0.0,
+                "waiting_time": 224.0
+              }
+            },
+            "decision": {
+              "forecast_score": 0.3245,
+              "ns_pressure": 0.0,
+              "ew_pressure": 20.0,
+              "chosen_action": "ew_green",
+              "optimizer_action": "ew_green",
+              "action_rewards": {
+                "ns_green": -0.8758,
+                "ew_green": 1.1242
+              },
+              "one_hot_penalty": 36.0,
+              "coordination_bonus": -10.0,
+              "message": "East-west green was selected because east-west pressure (20.00) is dominant and forecast congestion is 0.32."
+            }
+          },
+          "J1_0": {
+            "current_phase": "ns_green",
+            "phase_age": 15,
+            "total_queue": 0.0,
+            "total_wait": 0.0,
+            "approaches": {
+              "north": {
+                "queue_length": 0.0,
+                "avg_speed": 0.0,
+                "occupancy": 0.0,
+                "waiting_time": 0.0
+              },
+              "south": {
+                "queue_length": 0.0,
+                "avg_speed": 0.0,
+                "occupancy": 0.0,
+                "waiting_time": 0.0
+              },
+              "east": {
+                "queue_length": 0.0,
+                "avg_speed": 0.0,
+                "occupancy": 0.0,
+                "waiting_time": 0.0
+              },
+              "west": {
+                "queue_length": 0.0,
+                "avg_speed": 9.78,
+                "occupancy": 0.0,
+                "waiting_time": 0.0
+              }
+            },
+            "decision": {
+              "forecast_score": 0.3249,
+              "ns_pressure": 0.0,
+              "ew_pressure": 0.0,
+              "chosen_action": "ew_green",
+              "optimizer_action": "ew_green",
+              "action_rewards": {
+                "ns_green": -0.2762,
+                "ew_green": -0.2762
+              },
+              "one_hot_penalty": 36.0,
+              "coordination_bonus": -10.0,
+              "message": "East-west green was selected because east-west pressure (0.00) is dominant and forecast congestion is 0.32."
+            }
+          },
+          "J2_0": {
+            "current_phase": "ns_green",
+            "phase_age": 15,
+            "total_queue": 12.0,
+            "total_wait": 132.0,
+            "approaches": {
+              "north": {
+                "queue_length": 0.0,
+                "avg_speed": 0.0,
+                "occupancy": 0.0,
+                "waiting_time": 0.0
+              },
+              "south": {
+                "queue_length": 0.0,
+                "avg_speed": 0.0,
+                "occupancy": 0.0,
+                "waiting_time": 0.0
+              },
+              "east": {
+                "queue_length": 0.0,
+                "avg_speed": 0.0,
+                "occupancy": 0.0,
+                "waiting_time": 0.0
+              },
+              "west": {
+                "queue_length": 12.0,
+                "avg_speed": 10.869,
+                "occupancy": 0.0,
+                "waiting_time": 132.0
+              }
+            },
+            "decision": {
+              "forecast_score": 0.325,
+              "ns_pressure": 0.0,
+              "ew_pressure": 12.0,
+              "chosen_action": "ew_green",
+              "optimizer_action": "ew_green",
+              "action_rewards": {
+                "ns_green": -0.8762,
+                "ew_green": 1.1238
+              },
+              "one_hot_penalty": 36.0,
+              "coordination_bonus": -10.0,
+              "message": "East-west green was selected because east-west pressure (12.00) is dominant and forecast congestion is 0.32."
+            }
+          }
+        }
+      },
+      {
+        "time_seconds": 105,
+        "controller": "hybrid",
+        "actions": {
+          "J0_0": "ew_green",
+          "J1_0": "ew_green",
+          "J2_0": "ew_green"
+        },
+        "intersections": {
+          "J0_0": {
+            "current_phase": "ew_green",
+            "phase_age": 0,
+            "total_queue": 24.0,
+            "total_wait": 136.0,
+            "approaches": {
+              "north": {
+                "queue_length": 0.0,
+                "avg_speed": 0.0,
+                "occupancy": 0.0,
+                "waiting_time": 0.0
+              },
+              "south": {
+                "queue_length": 0.0,
+                "avg_speed": 0.0,
+                "occupancy": 0.0,
+                "waiting_time": 0.0
+              },
+              "east": {
+                "queue_length": 0.0,
+                "avg_speed": 0.0,
+                "occupancy": 0.0,
+                "waiting_time": 0.0
+              },
+              "west": {
+                "queue_length": 24.0,
+                "avg_speed": 11.222,
+                "occupancy": 0.0,
+                "waiting_time": 136.0
+              }
+            },
+            "decision": {
+              "forecast_score": 0.3233,
+              "ns_pressure": 0.0,
+              "ew_pressure": 24.0,
+              "chosen_action": "ew_green",
+              "optimizer_action": "ew_green",
+              "action_rewards": {
+                "ns_green": -0.8748,
+                "ew_green": 1.1252
+              },
+              "one_hot_penalty": 36.0,
+              "coordination_bonus": -10.0,
+              "message": "East-west green was selected because east-west pressure (24.00) is dominant and forecast congestion is 0.32."
+            }
+          },
+          "J1_0": {
+            "current_phase": "ew_green",
+            "phase_age": 0,
+            "total_queue": 12.0,
+            "total_wait": 108.0,
+            "approaches": {
+              "north": {
+                "queue_length": 0.0,
+                "avg_speed": 0.0,
+                "occupancy": 0.0,
+                "waiting_time": 0.0
+              },
+              "south": {
+                "queue_length": 0.0,
+                "avg_speed": 0.0,
+                "occupancy": 0.0,
+                "waiting_time": 0.0
+              },
+              "east": {
+                "queue_length": 0.0,
+                "avg_speed": 0.0,
+                "occupancy": 0.0,
+                "waiting_time": 0.0
+              },
+              "west": {
+                "queue_length": 12.0,
+                "avg_speed": 11.625,
+                "occupancy": 0.0,
+                "waiting_time": 108.0
+              }
+            },
+            "decision": {
+              "forecast_score": 0.3238,
+              "ns_pressure": 0.0,
+              "ew_pressure": 12.0,
+              "chosen_action": "ew_green",
+              "optimizer_action": "ew_green",
+              "action_rewards": {
+                "ns_green": -0.8753,
+                "ew_green": 1.1247
+              },
+              "one_hot_penalty": 36.0,
+              "coordination_bonus": -10.0,
+              "message": "East-west green was selected because east-west pressure (12.00) is dominant and forecast congestion is 0.32."
+            }
+          },
+          "J2_0": {
+            "current_phase": "ew_green",
+            "phase_age": 0,
+            "total_queue": 4.0,
+            "total_wait": 48.0,
+            "approaches": {
+              "north": {
+                "queue_length": 0.0,
+                "avg_speed": 0.0,
+                "occupancy": 0.0,
+                "waiting_time": 0.0
+              },
+              "south": {
+                "queue_length": 0.0,
+                "avg_speed": 0.0,
+                "occupancy": 0.0,
+                "waiting_time": 0.0
+              },
+              "east": {
+                "queue_length": 0.0,
+                "avg_speed": 0.0,
+                "occupancy": 0.0,
+                "waiting_time": 0.0
+              },
+              "west": {
+                "queue_length": 4.0,
+                "avg_speed": 11.51,
+                "occupancy": 0.0,
+                "waiting_time": 48.0
+              }
+            },
+            "decision": {
+              "forecast_score": 0.3243,
+              "ns_pressure": 0.0,
+              "ew_pressure": 4.0,
+              "chosen_action": "ew_green",
+              "optimizer_action": "ew_green",
+              "action_rewards": {
+                "ns_green": -0.8757,
+                "ew_green": 1.1243
+              },
+              "one_hot_penalty": 36.0,
+              "coordination_bonus": -10.0,
+              "message": "East-west green was selected because east-west pressure (4.00) is dominant and forecast congestion is 0.32."
+            }
+          }
+        }
+      }
+    ]
+  },
+  "artifacts": {
+    "benchmark_runs_csv": "/api/runs/20260411_221729_301737/artifacts/benchmark_runs.csv",
+    "benchmark_summary_csv": "/api/runs/20260411_221729_301737/artifacts/benchmark_summary.csv",
+    "trace_json": "/api/runs/20260411_221729_301737/artifacts/trace.json"
+  }
+}

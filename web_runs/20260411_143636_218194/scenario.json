@@ -1,0 +1,203 @@
+{
+  "run_id": "20260411_143636_218194",
+  "scenario_name": "area_20260411_143636_218194",
+  "sumocfg_path": "C:\\Users\\santhosh\\OneDrive\\Desktop\\trafiic pro\\web_runs\\20260411_143636_218194\\cross.sumocfg",
+  "net_path": "C:\\Users\\santhosh\\OneDrive\\Desktop\\trafiic pro\\web_runs\\20260411_143636_218194\\cross.net.xml",
+  "route_path": "C:\\Users\\santhosh\\OneDrive\\Desktop\\trafiic pro\\web_runs\\20260411_143636_218194\\cross.rou.xml",
+  "source": "abstract-grid",
+  "fallback_reason": "504 Server Error: Gateway Timeout for url: https://overpass-api.de/api/interpreter?data=%5Bout%3Axml%5D%5Btimeout%3A25%5D%3B%28way%5B%22highway%22%5D%2813.084719146666975%2C80.25697231292726%2C13.088648419367086%2C80.26482582092287%29%3B%3E%3B%29%3Bout+body%3B",
+  "bbox": {
+    "south": 13.084719146666975,
+    "north": 13.088648419367086,
+    "west": 80.25697231292726,
+    "east": 80.26482582092287
+  },
+  "polygon": [
+    {
+      "lat": 13.084719146666975,
+      "lng": 80.25697231292726
+    },
+    {
+      "lat": 13.088648419367086,
+      "lng": 80.25697231292726
+    },
+    {
+      "lat": 13.088648419367086,
+      "lng": 80.26482582092287
+    },
+    {
+      "lat": 13.084719146666975,
+      "lng": 80.26482582092287
+    }
+  ],
+  "preview": {
+    "nodes": [
+      {
+        "id": "E",
+        "x": 440.0,
+        "y": 220.0,
+        "type": "priority"
+      },
+      {
+        "id": "J0",
+        "x": 220.0,
+        "y": 220.0,
+        "type": "traffic_light"
+      },
+      {
+        "id": "N",
+        "x": 220.0,
+        "y": 440.0,
+        "type": "priority"
+      },
+      {
+        "id": "S",
+        "x": 220.0,
+        "y": 0.0,
+        "type": "priority"
+      },
+      {
+        "id": "W",
+        "x": 0.0,
+        "y": 220.0,
+        "type": "priority"
+      }
+    ],
+    "edges": [
+      {
+        "id": "E_to_J0",
+        "from": "E",
+        "to": "J0",
+        "lanes": 2,
+        "shape": [
+          {
+            "x": 440.0,
+            "y": 223.2
+          },
+          {
+            "x": 230.4,
+            "y": 223.2
+          }
+        ]
+      },
+      {
+        "id": "J0_to_E",
+        "from": "J0",
+        "to": "E",
+        "lanes": 2,
+        "shape": [
+          {
+            "x": 230.4,
+            "y": 216.8
+          },
+          {
+            "x": 440.0,
+            "y": 216.8
+          }
+        ]
+      },
+      {
+        "id": "J0_to_N",
+        "from": "J0",
+        "to": "N",
+        "lanes": 2,
+        "shape": [
+          {
+            "x": 223.2,
+            "y": 230.4
+          },
+          {
+            "x": 223.2,
+            "y": 440.0
+          }
+        ]
+      },
+      {
+        "id": "J0_to_S",
+        "from": "J0",
+        "to": "S",
+        "lanes": 2,
+        "shape": [
+          {
+            "x": 216.8,
+            "y": 209.6
+          },
+          {
+            "x": 216.8,
+            "y": 0.0
+          }
+        ]
+      },
+      {
+        "id": "J0_to_W",
+        "from": "J0",
+        "to": "W",
+        "lanes": 2,
+        "shape": [
+          {
+            "x": 209.6,
+            "y": 223.2
+          },
+          {
+            "x": 0.0,
+            "y": 223.2
+          }
+        ]
+      },
+      {
+        "id": "N_to_J0",
+        "from": "N",
+        "to": "J0",
+        "lanes": 2,
+        "shape": [
+          {
+            "x": 216.8,
+            "y": 440.0
+          },
+          {
+            "x": 216.8,
+            "y": 230.4
+          }
+        ]
+      },
+      {
+        "id": "S_to_J0",
+        "from": "S",
+        "to": "J0",
+        "lanes": 2,
+        "shape": [
+          {
+            "x": 223.2,
+            "y": 0.0
+          },
+          {
+            "x": 223.2,
+            "y": 209.6
+          }
+        ]
+      },
+      {
+        "id": "W_to_J0",
+        "from": "W",
+        "to": "J0",
+        "lanes": 2,
+        "shape": [
+          {
+            "x": 0.0,
+            "y": 216.8
+          },
+          {
+            "x": 209.6,
+            "y": 216.8
+          }
+        ]
+      }
+    ],
+    "bounds": {
+      "min_x": 0.0,
+      "max_x": 440.0,
+      "min_y": 0.0,
+      "max_y": 440.0
+    }
+  }
+}

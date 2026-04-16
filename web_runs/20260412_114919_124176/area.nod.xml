@@ -1,0 +1,8 @@
+<nodes>
+    <node id="P0" x="400.46" y="570.0" type="traffic_light"/>
+    <node id="P1" x="408.04" y="450.56" type="traffic_light"/>
+    <node id="P2" x="70.0" y="559.74" type="priority"/>
+    <node id="P3" x="890.0" y="540.78" type="priority"/>
+    <node id="P4" x="70.0" y="458.88" type="priority"/>
+    <node id="P5" x="355.03" y="70.0" type="priority"/>
+</nodes>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Traffic Quantum Dashboard</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet-draw@1.0.4/dist/leaflet.draw.css" />
+  <link rel="stylesheet" href="/static/dashboard.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="hero">
+      <div>
+        <p class="eyebrow">Explainable Hybrid Traffic Control</p>
+        <h1>Map-Selected SUMO Traffic Dashboard</h1>
+        <p class="lede">Draw an area, convert it into a clean map-like SUMO area network with connected border roads and simplified intersections, then run the hybrid controller and inspect the replay, decisions, and analytics.</p>
+      </div>
+      <div class="hero-card">
+        <div class="hero-stat"><span class="label">Pipeline</span><span class="value">Map -> SUMO -> Controller -> Replay</span></div>
+        <div class="hero-stat"><span class="label">Best Demo Use</span><span class="value">Explainable smart traffic review</span></div>
+      </div>
+    </header>
+
+    <main class="dashboard-grid">
+      <section class="panel panel-map">
+        <div class="panel-header">
+          <h2>1. Select Area</h2>
+          <p>Draw a polygon or rectangle on the map. The backend will use that marked area to generate a connected SUMO road layout that reaches the border neatly, keeps junctions simple, and stays easy to understand.</p>
+        </div>
+        <div id="map"></div>
+        <div class="controls">
+          <button id="prepare-area">Prepare SUMO Area</button>
+          <span id="prepare-status" class="status-text"></span>
+        </div>
+      </section>
+
+      <section class="panel">
+        <div class="panel-header">
+          <h2>2. Simulation Control</h2>
+          <p>Choose the main controller, run benchmark comparison, and optionally launch native SUMO GUI.</p>
+        </div>
+        <div class="control-grid">
+          <label>Controller
+            <select id="controller">
+              <option value="hybrid">Hybrid</option>
+              <option value="fixed">Fixed</option>
+              <option value="actuated">Actuated</option>
+              <option value="genetic">Genetic</option>
+            </select>
+          </label>
+          <label>Run Mode
+            <select id="run-mode">
+              <option value="quick">Quick Run</option>
+              <option value="full">Full Benchmark</option>
+            </select>
+          </label>
+          <label>Episode Seconds
+            <input id="episode-seconds" type="number" min="60" step="60" value="300" />
+          </label>
+          <label class="checkbox">
+            <input id="open-gui" type="checkbox" />
+            Launch SUMO GUI during selected run
+          </label>
+        </div>
+        <div class="controls">
+          <button id="run-simulation" disabled>Run Simulation</button>
+          <button id="open-gui-btn" disabled>Open SUMO GUI Later</button>
+          <span id="run-status" class="status-text"></span>
+        </div>
+        <p class="status-text">`Quick Run` runs only the selected controller for faster output. `Full Benchmark` runs all controllers for comparison.</p>
+        <div id="artifacts" class="artifact-list"></div>
+      </section>
+
+      <section class="panel panel-preview">
+        <div class="panel-header">
+          <h2>3. Network Preview</h2>
+          <p>Preview the generated SUMO area layout before or after simulation.</p>
+        </div>
+        <svg id="network-preview" viewBox="0 0 900 500" preserveAspectRatio="xMidYMid meet"></svg>
+      </section>
+
+      <section class="panel">
+        <div class="panel-header">
+          <h2>4. Controller Comparison</h2>
+          <p>Lower waiting and queue are better. Higher throughput is better.</p>
+        </div>
+        <div id="comparison-table" class="table-wrap"></div>
+      </section>
+
+      <section class="panel panel-replay">
+        <div class="panel-header">
+          <h2>5. Junction Replay</h2>
+          <p>Replay the selected controller and click junctions to inspect explanations and reward breakdowns.</p>
+        </div>
+        <input id="timeline" type="range" min="0" max="0" value="0" disabled />
+        <div id="timeline-label" class="timeline-label">No run loaded.</div>
+        <svg id="replay-network" viewBox="0 0 900 500" preserveAspectRatio="xMidYMid meet"></svg>
+      </section>
+
+      <section class="panel">
+        <div class="panel-header">
+          <h2>6. Decision Explanation</h2>
+          <p>Inspect why a signal action was chosen, including pressure, forecast, penalties, and local rewards.</p>
+        </div>
+        <div id="junction-detail" class="detail-card">Select a junction after running a simulation.</div>
+      </section>
+    </main>
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet-draw@1.0.4/dist/leaflet.draw.js"></script>
+  <script src="https://unpkg.com/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+  <script src="/static/dashboard.js"></script>
+</body>
+</html>
